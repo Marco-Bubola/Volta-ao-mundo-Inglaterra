@@ -1,6 +1,6 @@
 # Volta ao mundo
 
--**tema** : ## Inglaterra*
+- **Tema:** ## Inglaterra*
 
 ###  atividade para aula do professor junior*
 
