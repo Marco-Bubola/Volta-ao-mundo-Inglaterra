@@ -84,7 +84,7 @@ header .container-fluid {
 .section-text {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-    font-size: 1.45rem;
+    font-size: 1.3rem;
     line-height: 1.7;
     color: #d1d1d1; /* Lighter text for readability */
     text-indent: 30px;
@@ -162,24 +162,20 @@ header .container-fluid {
     color: #ccc;
 }
 
+
 /* ============================
    Button Styles
 ============================ */
 .btn-custom {
-    background-color: #ffcc00;
     color: #121212;
     padding: 0.75rem 2rem;
     border: none;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     border-radius: 50px;
     margin-top: 2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: background-color 0.3s ease;
-}
-
-.btn-custom:hover {
-    background-color: #e6b800;
 }
 
 /* ============================
@@ -197,13 +193,46 @@ header .container-fluid {
     font-weight: 600;
 }
 
-.navbar a:hover {
-    color: #ffcc00 !important; /* Hover color for the links */
-}
-
 .navbar-toggler-icon {
     background-color: #fff;
 }
+
+/* -----------------------------
+   Degradê nas palavras (hover)
+----------------------------- */
+
+.gradient-text {
+    color: #fff;
+    transition: all 0.4s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.gradient-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #cf142b, #ffffff, #003478);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    
+}
+
+/* Hover - ativa o degradê com sombra */
+.nav-link:hover .gradient-text::after,
+.navbar-brand:hover .gradient-text::after {
+    opacity: 1;
+}
+
 
 /* ============================
    Utility & Misc Styles
@@ -241,6 +270,7 @@ header .container-fluid {
     }
 }
 
+/* Animação de Scroll */
 .scroll-animation {
     opacity: 0;
     transition: opacity 1s ease-out;
@@ -248,6 +278,22 @@ header .container-fluid {
 
 .scroll-animation-visible {
     opacity: 1;
+}
+
+/* Efeito de hover em Links */
+.navbar a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+    transform: scale(1.05);
+}
+
+/* Efeito de foco em Botões */
+.btn-custom:focus {
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+    outline: none;
 }
 
 /* ============================

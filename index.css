@@ -1,380 +1,475 @@
-   /* Styling for the image container */
-   .image-container {
-    position: relative;
-    width: 100%; /* Ocupa 99% da largura da tela */
-    height: 80vh; /* Ocupa 80% da altura da tela */
-    margin: 0 auto; /* Centraliza a container horizontalmente */
-}
-
-/* Styling for the image itself */
-.image-container img {
-    width: 100%; /* A imagem ocupa 100% da largura do container */
-    height: 100%; /* A imagem ocupa 100% da altura do container */
-    object-fit: cover; /* Garante que a imagem ocupe o espaço sem distorção */
-}
-
- 
+/* ============================
+   Font Import
+============================= */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
   
-    /* Styling for the cards */
-    .cards-container {
-        position: absolute;
-        bottom: 5%; /* Posiciona os cards abaixo do texto */
-        left: 50%;
-        transform: translateX(-50%); /* Centraliza os cards */
-        display: flex;
-        gap: 20px;
-        z-index: 2;
+/* ============================
+   Global Styles
+============================ */
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+/* ============================
+   Hero Section Styles
+============================ */
+.hero-section {
+    background-image: url('img/england_by_paynejohnsson_dgpelwr-pre.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section h1 {
+    font-size: 5rem;
+    animation: fadeIn 2s ease-in-out;
+    z-index: 2;
+    color: white;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    animation: fadeIn 3s ease-in-out;
+    z-index: 2;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section img {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90%;
+    max-height: 80%;
+    z-index: 1;
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.7);
+}
+
+/* Efeito de Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
-
-    .card {
-        width: 150px;
-        cursor: pointer;
-        border: 2px solid white;
-        border-radius: 10px;
-        overflow: hidden;
-        transition: transform 0.3s ease;
-        text-align: center;
+    to {
+        opacity: 1;
     }
+}
 
-    .card:hover {
-        transform: scale(1.05); /* Efeito de zoom nos cards */
-    }
+/* ============================
+   Button Styles
+============================ */
+.cta-btn {
+    background-color: transparent;
+    color: white; /* Cor do botão em branco */
+    border: 2px solid white; /* Borda branca */
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
 
-    .card-img-top {
-        width: 100%;
-        height: 120px;
-        object-fit: cover;
-    }
+.cta-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo escurecido */
+    color: white; /* Cor do texto continua branca */
+    border: 2px solid white; /* Borda permanece a mesma */
+    transform: scale(1.1);
+}
 
-    .card-body {
-        background-color: rgba(0, 0, 0, 0.6);
-        color: white;
-    }
+/* ============================
+   Image Container Styles
+============================ */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    overflow: hidden; /* Garante que a imagem se ajuste bem */
+}
 
-    .card-title {
-        font-size: 1rem;
-        font-weight: 600;
-    }
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out; /* Transição suave */
+}
 
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-        .text-container {
-            width: 70%; /* Aumenta a largura do texto em telas menores */
-        }
+.image-container:hover img {
+    transform: scale(1.1); /* Efeito de zoom suave ao passar o mouse */
+}
 
-        .cards-container {
-            flex-direction: column;
-            right: 10%;
-            bottom: 5%;
-        }
+/* ============================
+   Card Styles
+============================ */
+.cards-container {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    z-index: 2;
+}
 
-        .card {
-            width: 100%;
-        }
-    }
-   
-    .text-container3 {
-        position: absolute;
-        top: 0; /* Começa no topo */
-        left: 70%; /* Alinha o texto no centro horizontal */
-        transform: translateX(-50%); /* Centraliza horizontalmente */
-        height: 80vh; /* Ocupa 100% da altura da tela */
-        color: white;
-        z-index: 2;
-        padding: 20px;
-         border-radius: 15px;
-        width: 50%; /* Limita a largura do texto */
-        text-align: center; /* Centraliza o texto */
-        display: flex;
-        flex-direction: column;
-        justify-content: right; /* Centraliza verticalmente */
-    }
+.card {
+    width: 300px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo sutil para os cards */
+}
 
-/* Hover effect for the text */
+.card:hover {
+    transform: translateY(-10px); /* Levanta o card suavemente */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Sombra mais suave ao passar o mouse */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.card-body {
+    padding: 15px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* ============================
+   Text Containers Styles (Inside Image)
+============================ */
+
+/* Text container 3 */
+.text-container3 {
+    position: absolute;
+    top: 0;
+    left: 73%;
+    transform: translateX(-50%);
+    height: 80vh;
+    color: white;
+    z-index: 2;
+    padding: 20px;
+    border-radius: 15px;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: right; /* Ajusta o conteúdo verticalmente */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); /* Gradiente sutil */
+    transition: background 0.3s ease;
+}
+
 .text-container3:hover {
     background-color: rgba(0, 0, 0, 0.7); /* Aumenta a opacidade do fundo quando hover */
 }
+
 .text-container3 h2 {
-    font-size: 3rem; /* Aumenta o tamanho do título */
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 .text-container3 p {
-    font-size: 1.5rem; /* Aumenta o tamanho da fonte */
+    font-size: 1.5rem;
     line-height: 1.8;
     margin-bottom: 15px;
 }
- /* Font import */
- @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
 
- /* Apply font to the whole page */
- body {
-     font-family: 'Roboto Slab', serif;
- }
+/* Text container 4 */
+.text-container4 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateY(-50%) translateX(-50%);
+    color: white;
+    z-index: 2;
+    padding: 20px;
+    border-radius: 15px;
+    width: 40%;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); /* Gradiente sutil */
+    transition: background 0.3s ease;
+}
 
- /* Hero Section */
- .hero-section {
-     background-image: url('img/england_by_paynejohnsson_dgpelwr-pre.jpg'); /* Substitua pela URL correta da imagem */
-     background-size: cover;
-     background-position: center;
-     color: white; /* Texto branco */
-     height: 100vh;
-     position: relative;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     text-align: center;
-     box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); /* Sombra interna */
- }
+.text-container4:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
- .hero-section h1 {
-     font-size: 5rem;
-     animation: fadeIn 2s ease-in-out;
-     z-index: 2;
-     color: white; /* Título em branco */
-     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7); /* Sombra para melhorar legibilidade */
- }
+.text-container4 h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
- .hero-section p {
-     font-size: 1.5rem;
-     animation: fadeIn 3s ease-in-out;
-     z-index: 2;
-     color: white; /* Cor do parágrafo em branco */
-     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para melhorar legibilidade */
- }
+.text-container4 p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
 
- .cta-btn {
-     background-color: transparent;
-     color: white; /* Cor do botão em branco */
-     border: 2px solid white; /* Borda branca */
-     padding: 12px 25px;
-     font-size: 18px;
-     border-radius: 5px;
-     text-decoration: none;
-     margin-top: 20px;
-     display: inline-block;
-     transition: all 0.3s ease;
-     z-index: 2;
- }
+/* Text container 2 */
+.text-container2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: white;
+    z-index: 2;
+    padding: 20px;
+    border-radius: 15px;
+    width: 40%;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); /* Gradiente sutil */
+    transition: background 0.3s ease;
+}
 
- .cta-btn:hover {
-     background-color: rgba(255, 255, 255, 0.2); /* Fundo escurecido */
-     color: white; /* Cor do texto continua branca */
-     border: 2px solid white; /* Borda permanece a mesma */
-     transform: scale(1.1);
- }
+.text-container2:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
- /* Efeito de Fade In */
- @keyframes fadeIn {
-     from {
-         opacity: 0;
-     }
+.text-container2 h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
-     to {
-         opacity: 1;
-     }
- }
+.text-container2 p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
 
- /* Ajustando o posicionamento da imagem */
- .hero-section img {
-     position: absolute;
-     bottom: 20px; /* Imagem fica um pouco mais para baixo */
-     left: 50%;
-     transform: translateX(-50%);
-     max-width: 90%;
-     max-height: 80%;
-     z-index: 1; /* Para ficar atrás do texto */
-     box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.7); /* Sombra interna na imagem */
- }
+/* Text container 1 */
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%) translateX(-50%);
+    color: white;
+    z-index: 2;
+    padding: 20px;
+    border-radius: 15px;
+    width: 40%;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); /* Gradiente sutil */
+    transition: background 0.3s ease;
+}
 
- /* Navbar */
- .navbar {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     z-index: 3; /* Garantir que a navbar fique sobre a imagem */
-     transition: background-color 0.3s ease;
- }
+.text-container:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
- .navbar .navbar-nav .nav-link {
-     color: white !important; /* Cor do texto da navbar em branco */
-     font-size: 1.1rem;
-     font-weight: 700;
- }
+.text-container h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
- .navbar .navbar-toggler-icon {
-     background-color: white; /* Ícone do menu em branco */
- }
+.text-container p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
 
- .navbar:hover {
-     background-color: rgba(0, 0, 0, 0.8); /* Aumenta a opacidade quando o mouse passa */
- }
+/* ============================
+   Button Styling
+============================ */
+.btn-primary {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 30px; /* Tornando os botões mais arredondados */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1); /* Leve aumento ao passar o mouse */
+}
+
+/* ============================
+   Button Styles
+============================ */
+.btn-custom {
+    color: #121212;
+    padding: 0.75rem 2rem;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
 
 
- /* Scroll animado */
- .scroll {
-     animation: scroll 1.5s ease-in-out;
- }
+/* ============================
+   Navbar Styles
+============================ */
+.navbar {
+    padding: 1rem 2rem;
+    background-color: #222; /* Darker navbar background */
+    transition: all 0.3s ease;
+}
 
- @keyframes scroll {
-     0% {
-         opacity: 0;
-         transform: translateY(50px);
-     }
+.navbar a {
+    color: #fff !important;
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
 
-     100% {
-         opacity: 1;
-         transform: translateY(0);
-     }
- }
 
-   /* Carousel styling */
-   .carousel-item {
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+/* -----------------------------
+   Degradê nas palavras (hover)
+----------------------------- */
+
+.gradient-text {
+    color: #fff;
+    transition: all 0.4s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.gradient-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #cf142b, #ffffff, #003478);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+/* Hover */
+.nav-link:hover .gradient-text::after {
+    opacity: 1;
+}
+/* Hover */
+.navbar-brand:hover .gradient-text::after {
+    opacity: 1;
+}
+
+/* ============================
+   Carousel Styles
+============================ */
+.carousel-item {
     position: relative;
     height: 80vh;
 }
 
 .carousel-item img {
-    object-fit: cover; /* Imagem preenche toda a tela */
+    object-fit: cover;
     width: 100%;
-    height: 100vh; /* Ocupa a altura total da tela */
+    height: 100vh;
 }
 
-  
-    /* Text container inside the image */
-    .text-container4 {
-        position: absolute;
-        top: 50%;
-        left: 50%; /* Alinha o texto à esquerda */
-        transform: translateY(-50%); /* Centraliza verticalmente */
-        color: white;
-        z-index: 2;
-        padding: 20px;
-        border-radius: 15px;
-        width: 40%; /* Limita a largura do texto */
-        text-align: center; /* Alinha o texto à esquerda */
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 40%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30%;
+    width: 38px;
+    height: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-indicators .active {
+    background-color: white;
+}
+
+/* ============================
+   Scroll Animations
+============================ */
+
+   
+    /* Scroll animado */
+    .scroll {
+        animation: scroll 1.5s ease-in-out;
     }
 
-    /* Hover effect for the text */
-    .text-container4:hover {
-        background-color: rgba(0, 0, 0, 0.7); /* Aumenta a opacidade do fundo quando hover */
-    }
-    .text-container4 h2 {
-        font-size: 3rem; /* Aumenta o tamanho do título */
-        font-weight: 700;
-        margin-bottom: 20px;
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
     }
 
-    .text-container4 p {
-        font-size: 1.5rem; /* Aumenta o tamanho da fonte */
-        line-height: 1.8;
-        margin-bottom: 15px;
-    }  /* Text container inside the image */
-      .text-container2 {
-        position: absolute;
-        top: 50%;
-        left: 30%; /* Alinha o texto à esquerda */
-        transform: translateY(-50%); /* Centraliza verticalmente */
-        color: white;
-        z-index: 2;
-        padding: 20px;
-        border-radius: 15px;
-        width: 40%; /* Limita a largura do texto */
-        text-align: center; /* Alinha o texto à esquerda */
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================
+   Responsive Adjustments
+============================ */
+@media (max-width: 768px) {
+    /* Adjust Text Container */
+    .text-container, .text-container2, .text-container3, .text-container4 {
+        width: 70%;
     }
 
-    /* Hover effect for the text */
-    .text-container2:hover {
-        background-color: rgba(0, 0, 0, 0.7); /* Aumenta a opacidade do fundo quando hover */
-    }
-    .text-container2 h2 {
-        font-size: 3rem; /* Aumenta o tamanho do título */
-        font-weight: 700;
-        margin-bottom: 20px;
+    .text-container {
+        left: 15%;
     }
 
-    .text-container2 p {
-        font-size: 1.5rem; /* Aumenta o tamanho da fonte */
-        line-height: 1.8;
-        margin-bottom: 15px;
-    }
-      /* Text container inside the image */
-      .text-container {
-        position: absolute;
-        top: 50%;
-        left: 10%; /* Alinha o texto à esquerda */
-        transform: translateY(-50%); /* Centraliza verticalmente */
-        color: white;
-        z-index: 2;
-        padding: 20px;
-         border-radius: 15px;
-        width: 40%; /* Limita a largura do texto */
-        text-align: center; /* Alinha o texto à esquerda */
-    }
-
-    /* Hover effect for the text */
-    .text-container:hover {
-        background-color: rgba(0, 0, 0, 0.7); /* Aumenta a opacidade do fundo quando hover */
-    }
-    .text-container h2 {
-        font-size: 3rem; /* Aumenta o tamanho do título */
-        font-weight: 700;
-        margin-bottom: 20px;
-    }
-
-    .text-container p {
-        font-size: 1.5rem; /* Aumenta o tamanho da fonte */
-        line-height: 1.8;
-        margin-bottom: 15px;
-    }
-    /* Button styling */
     .btn-primary {
-        margin-top: 20px;
-        padding: 12px 30px;
-        font-size: 18px;
-        border: 2px solid white;
-        background-color: transparent;
-        color: white;
-        border-radius: 5px;
+        width: 100%;
+        font-size: 16px;
     }
 
-    .btn-primary:hover {
-        background-color: white;
-        color: black;
+    .cards-container {
+        flex-direction: column;
+        right: 10%;
+        bottom: 5%;
     }
 
-    /* Carousel indicators: Centered at the bottom */
-    .carousel-indicators {
-        position: absolute;
-        bottom: 10px; /* Position indicators at the bottom */
-        left: 40%;
-        transform: translateX(-50%);
-        z-index: 10;
+    .card {
+        width: 100%;
     }
-
-    .carousel-indicators li {
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 30%;
-        width: 38px;
-        height: 10px;
-        transition: background-color 0.3s ease;
-    }
-
-    .carousel-indicators .active {
-        background-color: white;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-        .text-container {
-            width: 70%; /* Aumenta a largura do texto em telas menores */
-            left: 15%;
-        }
-
-        .btn-primary {
-            width: 100%;
-            font-size: 16px;
-        }
-    }
+}

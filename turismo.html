@@ -10,28 +10,39 @@
     </head>
 <body>
 <!-- Navbar (Transparent) -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" >
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top transparent-navbar">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.html" style="font-size: 2rem; font-weight: 700;">Inglaterra</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html" style="font-size: 2.5rem; font-weight: 700;">
+            <span class="gradient-text">INGLATERRA</span>
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html" style="font-size: 1.2rem; padding: 10px 15px;">Home</a>
+                    <a class="nav-link" href="index.html" style="font-size: 1.4rem; padding: 10px 15px;"><span class="gradient-text">INICIO</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="cultura.html" style="font-size: 1.2rem; padding: 10px 15px;">Cultura</a>
+                    <a class="nav-link" href="historia.html" style="font-size: 1.4rem; padding: 10px 15px;"><span class="gradient-text">HISTÓRIA</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="historia.html" style="font-size: 1.2rem; padding: 10px 15px;">História</a>
+                    <a class="nav-link" href="cultura.html" style="font-size: 1.4rem; padding: 10px 15px;"><span class="gradient-text">CULTURA</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="turismo.html" style="font-size: 1.4rem; padding: 10px 15px;"><span class="gradient-text">TURISMO</span></a>
                 </li>
             </ul>
         </div>
     </div>
-</nav>
-
+</nav><
+<script>
+    document.querySelectorAll('.gradient-text').forEach(span => {
+      span.setAttribute('data-text', span.textContent);
+    });
+  </script>
+  
 <!-- Header Section with Background Image -->
 <header class="text-white text-center py-5" style="background: url('img/2024660.jpg') no-repeat center center/cover; height: 50vh; position: relative;">
     <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.3);"></div> <!-- Gradient overlay -->
