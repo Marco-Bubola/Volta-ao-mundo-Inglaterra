@@ -1,0 +1,329 @@
+/* ============================
+   Global Styles
+============================ */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+    line-height: 1.6;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #fff;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* ============================
+   Header Section Styling
+============================ */
+header {
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Gradient overlay for better text visibility */
+header .container-fluid {
+    position: relative;
+    z-index: 2;
+}
+
+/* ============================
+   Section Styles
+============================ */
+.section {
+    padding: 6rem 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff; /* Accent color for titles */
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-text {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1.45rem;
+    line-height: 1.7;
+    color: #d1d1d1; /* Lighter text for readability */
+    text-indent: 30px;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.bg-dark {
+    background-color: #1a1a1a;
+    background: linear-gradient(45deg, #333333, #1a1a1a);
+}
+
+.bg-light {
+    background-color: #212121;
+    background-image: linear-gradient(45deg, #212121, #333);
+}
+
+/* Section Hover Effects */
+.section:hover {
+    background-color: #333;
+    transition: background-color 0.3s ease;
+}
+
+/* ============================
+   Card Styles
+============================ */
+/* Cards Layout */
+.timeline-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.timeline .timeline-event {
+    flex: 1 0 23%; /* 4 cards per row (100 / 4 = 25%, with spacing adjustment) */
+    margin-right: 2%;
+    margin-bottom: 2rem;
+}
+
+.timeline .timeline-event:nth-child(4n) {
+    margin-right: 0;
+}
+/* Card Styling */
+.card {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #ffcc00; /* Accent color for card titles */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+/* ============================
+   Button Styles
+============================ */
+.btn-custom {
+    background-color: #ffcc00;
+    color: #121212;
+    padding: 0.75rem 2rem;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #e6b800;
+}
+
+/* ============================
+   Navbar Styles
+============================ */
+.navbar {
+    padding: 1rem 2rem;
+    background-color: #222; /* Darker navbar background */
+    transition: all 0.3s ease;
+}
+
+.navbar a {
+    color: #fff !important;
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    color: #ffcc00 !important; /* Hover color for the links */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+/* ============================
+   Utility & Misc Styles
+============================ */
+.container {
+    z-index: 2;
+    position: relative;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* ============================
+   Animations
+============================ */
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.scroll-animation {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.scroll-animation-visible {
+    opacity: 1;
+}
+
+/* ============================
+   Transitions & Hover Effects
+============================ */
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+.transition-transform {
+    transition: transform 0.3s ease;
+}
+
+.hover:scale-105:hover {
+    transform: scale(1.05);
+}
+
+.hover:opacity-80:hover {
+    opacity: 0.8;
+}
+
+/* ============================
+   Responsive Adjustments
+============================ */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-text {
+        font-size: 1.1rem;
+    }
+
+    .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .card {
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-custom {
+        font-size: 1rem;
+    }
+}
+
+/* ============================
+   Tooltip Styles
+============================ */
+.tooltip {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+/* ============================
+   Shadow and Rounded Effects
+============================ */
+.shadow-xl {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.rounded {
+    border-radius: 20px;
+}
+
+/* ============================
+   Padding and Spacing
+============================ */
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.mb-3, .mb-4 {
+    margin-bottom: 1.5rem;
+}
