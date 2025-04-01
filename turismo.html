@@ -5,128 +5,308 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turismo na Inglaterra</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Custom Styling */
-        .section-title {
-            margin-bottom: 30px;
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
+    <link rel="stylesheet" href="turismo.css">
 
-        .section-text {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
-
-        .section-image img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .section {
-            padding: 40px 0;
-        }
-
-        .card-body {
-            padding: 20px;
-        }
-
-        .card-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        .card-text {
-            font-size: 1.2rem;
-        }
-    </style>
-</head>
+    </head>
 <body>
+<!-- Navbar (Transparent) -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" >
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" style="font-size: 2rem; font-weight: 700;">Inglaterra</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="font-size: 1.2rem; padding: 10px 15px;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cultura.html" style="font-size: 1.2rem; padding: 10px 15px;">Cultura</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="historia.html" style="font-size: 1.2rem; padding: 10px 15px;">História</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-    <!-- Header Section -->
-    <header class="bg-primary text-white text-center py-5">
-        <h1>Pontos Turísticos da Inglaterra</h1>
-        <p class="lead">Descubra os marcos históricos e culturais mais emblemáticos da Inglaterra.</p>
-    </header>
+<!-- Header Section with Background Image -->
+<header class="text-white text-center py-5" style="background: url('img/2024660.jpg') no-repeat center center/cover; height: 50vh; position: relative;">
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.3);"></div> <!-- Gradient overlay -->
+    <div class="container-fluid position-relative z-index-2" style="position: absolute; top: 20%; left: 0; right: 0; bottom: 0;">
+        <h1 class="display-4" style="font-size: 3.5rem; font-weight: 700; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">Pontos Turísticos da Inglaterra</h1>
+        <p class="lead" style="font-size: 1.5rem; font-weight: 400; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);">Descubra os marcos históricos e culturais mais emblemáticos da Inglaterra.</p>
+    </div>
+</header>
 
-    <!-- Section: Big Ben -->
-    <section class="section bg-light" id="big-ben">
-        <div class="container">
-            <h2 class="section-title">Big Ben</h2>
-            <p class="section-text">O Big Ben é um dos marcos mais famosos de Londres, conhecido mundialmente pela sua grande torre e pelo som do seu sino. Localizado no Palácio de Westminster, o Big Ben é um símbolo da cultura inglesa e um ícone de Londres.</p>
-            <div class="section-image">
-                <img src="img/big-ben.jpg" alt="Big Ben" class="img-fluid">
+
+<!-- Section: Big Ben -->
+<section class="section bg-dark py-5" id="big-ben">
+    <div class="container-fluid">
+        <div class="row align-items-center" style="height: 70vh;">
+            <!-- Image on the left -->
+            <div class="col-md-6 d-flex justify-content-center align-items-center" style="height: 100%;">
+                <div class="section-image shadow-xl rounded transition-all hover:scale-105" style="height: 100%; width: 100%; overflow: hidden;">
+                    <img src="img/8a8d48f75a7c57aeb870197fc54082e0.webp" alt="Big Ben" class="img-fluid rounded transition-transform hover:opacity-80" style="object-fit: cover; width: 100%; height: 100%; display: block;">
+                </div>
+            </div>
+
+            <!-- Text on the right -->
+            <div class="col-md-6 mt-4 mt-md-0">
+                <h2 class="section-title text-light mb-4 fade-in text-center">Big Ben</h2>
+                <p class="section-text text-light mb-3 fade-in">
+                    O Big Ben é um dos marcos mais famosos de Londres, conhecido mundialmente pela sua grande torre e pelo som do seu sino. Localizado no Palácio de Westminster, o Big Ben é um símbolo da cultura inglesa e um ícone de Londres.
+                </p>
+                
+                <p class="section-text text-light mb-3 fade-in">
+                    O nome "Big Ben" originalmente referia-se apenas ao maior sino da torre, que pesa mais de 13 toneladas. No entanto, ao longo do tempo, o nome foi associado à própria torre e ao icônico relógio que rege os horários da cidade.
+                </p>
+                
+                <p class="section-text text-light mb-3 fade-in">
+                    Além de seu papel como um importante símbolo de Londres, o Big Ben também é uma atração turística muito visitada. As visitas à torre são altamente populares, e o sino ainda soa a cada hora, sendo ouvido em todo o centro de Londres.
+                </p>
+
+                <p class="section-text text-light mb-3 fade-in">
+                    O Big Ben foi projetado por Augustus Pugin e a torre foi concluída em 1859. O relógio que marca o tempo foi considerado o maior e mais preciso do mundo na época de sua instalação. Ao longo dos anos, o Big Ben passou a simbolizar o governo britânico e a democracia. 
+                </p>
+
+                <p class="section-text text-light mb-3 fade-in">
+                    Embora o nome "Big Ben" seja usado para se referir à torre e ao sino, na verdade, é o nome do maior sino da torre, que pesa cerca de 13,5 toneladas. Cada badalada do sino é ouvida por todo o centro de Londres, e o som é um dos sons mais característicos da cidade.
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Section: Torre de Londres -->
-    <section class="section" id="tower-of-london">
-        <div class="container">
-            <h2 class="section-title">Torre de Londres</h2>
-            <p class="section-text">A Torre de Londres, fundada no século XI, é uma das construções mais icônicas de Londres. Originalmente uma fortaleza real, mais tarde foi usada como prisão. Hoje, abriga as Joias da Coroa e é um dos locais turísticos mais visitados do país.</p>
-            <div class="section-image">
-                <img src="img/tower-of-london.jpg" alt="Torre de Londres" class="img-fluid">
+ <!-- Section: Torre de Londres -->
+<section class="section bg-dark py-5" id="tower-of-london">
+    <div class="container-fluid">
+        <div class="row align-items-center" style="height: 70vh;">
+             
+                 <div class="col-md-6 mt-4 mt-md-0">
+                    <h2 class="section-title text-light mb-4 fade-in text-center">Torre de Londres</h2>
+                    <p class="section-text text-light mb-3 fade-in">
+                        A Torre de Londres, fundada no século XI, é uma das construções mais icônicas de Londres. Originalmente uma fortaleza real, mais tarde foi usada como prisão. Hoje, abriga as Joias da Coroa e é um dos locais turísticos mais visitados do país.
+                    </p>
+                    
+                    <p class="section-text text-light mb-3 fade-in">
+                        Durante a Idade Média, a Torre foi palco de importantes eventos históricos, incluindo a execução de figuras notáveis. Embora tenha servido de prisão, também desempenhou papel na defesa de Londres.
+                    </p>
+                    
+                    <p class="section-text text-light mb-3 fade-in">
+                        Hoje, a Torre de Londres é mais conhecida por abrigar as Joias da Coroa, uma coleção de símbolos da monarquia britânica. As visitas a este local são uma das experiências mais procuradas por turistas ao redor do mundo.
+                    </p>
+    
+                    <p class="section-text text-light mb-3 fade-in">
+                        Em 1666, um grande incêndio destruiu parte da torre, mas ela foi restaurada e continuou a ser um centro de poder. A Torre também é famosa por sua população de corvos, que, segundo a lenda, precisam permanecer para que o reino de Londres não caia.
+                    </p>
+    
+                    <p class="section-text text-light mb-3 fade-in">
+                        Além de seu papel como um forte histórico, a Torre de Londres também desempenha um importante papel cultural, sendo palco de exposições e eventos públicos.
+                    </p>
+                </div>
+        
+            <div class="col-md-6 d-flex justify-content-center align-items-center" style="height: 100%;">
+                <div class="section-image shadow-xl rounded transition-all hover:scale-105" style="height: 100%; width: 100%; overflow: hidden;">
+                    <img src="img/torre-de-londres-2.jpg" alt="Torre de Londres" class="img-fluid rounded transition-transform hover:opacity-80" style="object-fit: cover; width: 100%; height: 100%; display: block;">
+                </div>
+            </div>
+
+       
+        </div>
+    </div>
+</section>
+
+ <!-- Section: Stonehenge -->
+<section class="section bg-dark py-5" id="stonehenge">
+    <div class="container-fluid">
+        <div class="row align-items-center" style="height: 70vh;">
+            <!-- Image on the left -->
+            <div class="col-md-6 d-flex justify-content-center align-items-center" style="height: 100%;">
+                <div class="section-image shadow-xl rounded transition-all hover:scale-105" style="height: 100%; width: 100%; overflow: hidden;">
+                    <img src="img/220303081037-stonehenge-file-restricted.jpg" alt="Stonehenge" class="img-fluid rounded transition-transform hover:opacity-80" style="object-fit: cover; width: 100%; height: 100%; display: block;">
+                </div>
+            </div>
+
+            <!-- Text on the right -->
+            <div class="col-md-6 mt-4 mt-md-0">
+                <h2 class="section-title text-light mb-4 fade-in text-center">Stonehenge</h2>
+                <p class="section-text text-light mb-3 fade-in">
+                    Stonehenge é um dos maiores mistérios do mundo. Localizado na região de Wiltshire, o círculo de pedras tem mais de 4.000 anos e continua a intrigar arqueólogos e turistas. Acredita-se que tenha sido usado para rituais religiosos e observações astronômicas.
+                </p>
+                
+                <p class="section-text text-light mb-3 fade-in">
+                    A origem e a finalidade de Stonehenge ainda são temas de debate. Embora a maioria dos estudiosos concorde que o local tenha sido usado para fins religiosos e astronômicos, as exatas razões e métodos de construção continuam a ser uma incógnita.
+                </p>
+                
+                <p class="section-text text-light mb-3 fade-in">
+                    O local é composto por grandes blocos de pedra, conhecidos como megalitos, dispostos em um padrão circular. O alinhamento das pedras com o solstício de verão sugere um possível uso para a observação astronômica, sendo considerado um dos primeiros calendários solares.
+                </p>
+
+                <p class="section-text text-light mb-3 fade-in">
+                    Stonehenge foi designado Patrimônio Mundial da Humanidade pela UNESCO em 1986, reconhecido por sua importância histórica, cultural e científica. O local é uma das principais atrações turísticas da Inglaterra e um dos monumentos pré-históricos mais famosos do mundo.
+                </p>
+
+                <p class="section-text text-light mb-3 fade-in">
+                    Hoje, Stonehenge continua sendo um local de culto para algumas pessoas, e todos os anos, milhares de visitantes se reúnem no local durante o solstício de verão, celebrando a luz e a vida, como possivelmente feito pelos antigos povos que o construíram.
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Section: Stonehenge -->
-    <section class="section bg-light" id="stonehenge">
-        <div class="container">
-            <h2 class="section-title">Stonehenge</h2>
-            <p class="section-text">Stonehenge é um dos maiores mistérios do mundo. Localizado na região de Wiltshire, o círculo de pedras tem mais de 4.000 anos e continua a intrigar arqueólogos e turistas. Acredita-se que tenha sido usado para rituais religiosos e observações astronômicas.</p>
-            <div class="section-image">
-                <img src="img/stonehenge.jpg" alt="Stonehenge" class="img-fluid">
+<!-- Section: London Eye -->
+<section class="section bg-dark py-5" id="london-eye">
+    <div class="container-fluid">
+        <div class="row align-items-center" style="height: 70vh;">
+         
+ <div class="col-md-6 mt-4 mt-md-0">
+    <h2 class="section-title text-light mb-4 fade-in text-center">London Eye</h2>
+    <p class="section-text text-light mb-3 fade-in">
+        O London Eye, também conhecido como a "Roda Gigante de Londres", oferece uma vista panorâmica da cidade. Com mais de 135 metros de altura, é uma das atrações turísticas mais populares, proporcionando uma vista deslumbrante dos pontos turísticos de Londres.
+    </p>
+    
+    <p class="section-text text-light mb-3 fade-in">
+        A estrutura foi construída ao longo de sete anos, de 1998 a 2006, e rapidamente se tornou um dos marcos mais emblemáticos de Londres. Seu design inovador e a impressionante altura a tornaram uma das rodas gigantes mais altas do mundo.
+    </p>
+    
+    <p class="section-text text-light mb-3 fade-in">
+        Além de sua função como uma atração turística, o London Eye também serve como uma importante plataforma de observação para eventos e celebrações, como as famosas exibições de fogos de artifício durante o Ano Novo.
+    </p>
+
+    <p class="section-text text-light mb-3 fade-in">
+        A cada rotação, os visitantes podem ver diversos pontos turísticos de Londres, como o Big Ben, o Palácio de Buckingham, o rio Tâmisa, e a Catedral de St. Paul. A vista de 360 graus oferece uma experiência única e inesquecível para os turistas.
+    </p>
+
+    <p class="section-text text-light mb-3 fade-in">
+        O London Eye não é apenas uma atração popular, mas também um símbolo da modernidade e do dinamismo de Londres, contrastando com a rica história da cidade e a arquitetura clássica dos seus marcos mais antigos.
+    </p>
+</div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center" style="height: 100%;">
+                <div class="section-image shadow-xl rounded transition-all hover:scale-105" style="height: 100%; width: 100%; overflow: hidden;">
+                    <img src="img/london-eye.jpg" alt="London Eye" class="img-fluid rounded transition-transform hover:opacity-80" style="object-fit: cover; width: 100%; height: 100%; display: block;">
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+</section>
+
+<!-- Section: Buckingham Palace -->
+<section class="section bg-dark py-5" id="buckingham-palace">
+    <div class="container-fluid">
+        <div class="row align-items-center" style="height: 70vh;">
+            <!-- Image on the left -->
+            <div class="col-md-6 d-flex justify-content-center align-items-center" style="height: 100%;">
+                <div class="section-image shadow-xl rounded transition-all hover:scale-105" style="height: 100%; width: 100%; overflow: hidden;">
+                    <img src="img/3d31bf9d9ab2aaf55bdee0f869c67c81-21362-london-royal-london---windsor-full-day-tour-07.avif" alt="Buckingham Palace" class="img-fluid rounded transition-transform hover:opacity-80" style="object-fit: cover; width: 100%; height: 100%; display: block;">
+                </div>
+            </div>
+
+            <!-- Text on the right -->
+            <div class="col-md-6 mt-4 mt-md-0">
+                <h2 class="section-title text-light mb-4 fade-in text-center">Palácio de Buckingham</h2>
+                <p class="section-text text-light mb-3 fade-in">
+                    O Palácio de Buckingham é a residência oficial da Rainha Elizabeth II em Londres. É um dos pontos turísticos mais importantes da cidade, conhecido por suas trocas de guarda, cerimônias e por ser o centro das atividades reais na capital inglesa.
+                </p>
+                
+                <p class="section-text text-light mb-3 fade-in">
+                    O palácio foi originalmente construído em 1703 como uma casa particular para o Duque de Buckingham e, ao longo dos séculos, foi ampliado até se tornar a residência real que é hoje. Ele está situado no centro de Londres e é rodeado por grandes jardins e áreas públicas, como a famosa praça do Palácio.
+                </p>
+                
+                <p class="section-text text-light mb-3 fade-in">
+                    O Palácio de Buckingham é um local icônico da monarquia britânica e é aberto ao público durante os meses de verão, quando a família real não está presente. Durante este período, é possível explorar os belos salões e os jardins, que são normalmente privados.
+                </p>
+
+                <p class="section-text text-light mb-3 fade-in">
+                    A Troca da Guarda, realizada diariamente durante os meses de verão, é um dos eventos mais populares do palácio, atraindo milhares de turistas que assistem à cerimônia de perto. Esse evento simboliza a continuidade das tradições reais e a segurança da família real.
+                </p>
+
+                <p class="section-text text-light mb-3 fade-in">
+                    Além de ser uma residência real, o Palácio de Buckingham também desempenha um papel importante nas cerimônias de estado e nos eventos oficiais da monarquia. Vários eventos de prestígio, como banquetes e recepções, são realizados lá, com a presença de dignitários internacionais e representantes de governos.
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Section: London Eye -->
-    <section class="section" id="london-eye">
-        <div class="container">
-            <h2 class="section-title">London Eye</h2>
-            <p class="section-text">O London Eye, também conhecido como a "Roda Gigante de Londres", oferece uma vista panorâmica da cidade. Com mais de 135 metros de altura, é uma das atrações turísticas mais populares, proporcionando uma vista deslumbrante dos pontos turísticos de Londres.</p>
-            <div class="section-image">
-                <img src="img/london-eye.jpg" alt="London Eye" class="img-fluid">
+  <!-- Section: Edinburgh Castle -->
+<section class="section bg-dark py-5" id="edinburgh-castle">
+    <div class="container-fluid">
+        <div class="row align-items-center" style="height: 70vh;">
+                     <div class="col-md-6 mt-4 mt-md-0">
+                <h2 class="section-title text-light mb-4 fade-in text-center">Castelo de Edimburgo</h2>
+                <p class="section-text text-light mb-3 fade-in">
+                    O Castelo de Edimburgo, localizado na capital da Escócia, é um dos castelos mais visitados do Reino Unido. Com uma história que remonta ao século XII, o castelo oferece uma visão única da história medieval e das lutas pela independência escocesa.
+                </p>
+                
+                <p class="section-text text-light mb-3 fade-in">
+                    Situado no topo de uma colina, o castelo oferece vistas panorâmicas sobre a cidade de Edimburgo e é uma das fortalezas mais emblemáticas da Escócia. O local tem sido palco de várias batalhas e eventos históricos, incluindo a resistência escocesa contra a invasão inglesa.
+                </p>
+                
+                <p class="section-text text-light mb-3 fade-in">
+                    Durante a Idade Média, o Castelo de Edimburgo foi a residência real dos monarcas escoceses e é o lar de muitas relíquias históricas, como a Pedra do Destino, usada durante as coroações dos reis escoceses.
+                </p>
+
+                <p class="section-text text-light mb-3 fade-in">
+                    Hoje, o castelo é uma das principais atrações turísticas da Escócia, recebendo visitantes de todo o mundo que vêm explorar suas muralhas, salas de exposições e o museu do exército escocês.
+                </p>
+
+                <p class="section-text text-light mb-3 fade-in">
+                    O Castelo de Edimburgo também é um importante símbolo da identidade e da cultura escocesa. O local é palco de eventos culturais, como o famoso Festival Internacional de Edimburgo, e é um ponto de encontro para a celebração da história e das tradições escocesas.
+                </p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center" style="height: 100%;">
+                <div class="section-image shadow-xl rounded transition-all hover:scale-105" style="height: 100%; width: 100%; overflow: hidden;">
+                    <img src="img/Edinburgh-Castle-Scotland.webp" alt="Edinburgh Castle" class="img-fluid rounded transition-transform hover:opacity-80" style="object-fit: cover; width: 100%; height: 100%; display: block;">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+ <!-- Section: Oxford University -->
+<section class="section bg-dark py-5" id="oxford-university">
+    <div class="container-fluid">
+        <div class="row align-items-center" style="height: 70vh;">
+            <!-- Image on the left -->
+            <div class="col-md-6 d-flex justify-content-center align-items-center" style="height: 100%;">
+                <div class="section-image shadow-xl rounded transition-all hover:scale-105" style="height: 100%; width: 100%; overflow: hidden;">
+                    <img src="img/99-1024x512.jpg" alt="Oxford University" class="img-fluid rounded transition-transform hover:opacity-80" style="object-fit: cover; width: 100%; height: 100%; display: block;">
+                </div>
+            </div>
+
+            <!-- Text on the right -->
+            <div class="col-md-6 mt-4 mt-md-0">
+                <h2 class="section-title text-light mb-4 fade-in text-center">Universidade de Oxford</h2>
+                <p class="section-text text-light mb-3 fade-in">
+                    A Universidade de Oxford, fundada no século XII, é uma das universidades mais antigas e prestigiadas do mundo. Localizada na cidade de Oxford, ela atrai estudantes e turistas de todo o mundo, oferecendo visitas a vários de seus colégios históricos.
+                </p>
+                
+                <p class="section-text text-light mb-3 fade-in">
+                    Oxford é famosa por sua educação de excelência, que abrange uma ampla gama de disciplinas, desde as ciências até as artes. Muitos dos seus colégios históricos, como o Balliol College e o Magdalen College, têm séculos de história e arquitetura deslumbrante.
+                </p>
+                
+                <p class="section-text text-light mb-3 fade-in">
+                    A universidade é composta por 38 faculdades independentes, cada uma com sua própria tradição, arquitetura e história. O campus é repleto de belos edifícios góticos e pátios tranquilos, que atraem tanto os alunos quanto os turistas.
+                </p>
+
+                <p class="section-text text-light mb-3 fade-in">
+                    A Universidade de Oxford tem uma rica história de ex-alunos notáveis, incluindo líderes políticos, escritores, cientistas e filósofos. Entre seus antigos alunos estão figuras como Stephen Hawking, J.R.R. Tolkien e o ex-primeiro-ministro britânico, Tony Blair.
+                </p>
+
+                <p class="section-text text-light mb-3 fade-in">
+                    Além de sua importância acadêmica, Oxford é também um centro cultural vibrante. A cidade tem uma grande cena literária, com diversos eventos e festivais que celebram a história e a educação da universidade.
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Section: Buckingham Palace -->
-    <section class="section bg-light" id="buckingham-palace">
-        <div class="container">
-            <h2 class="section-title">Palácio de Buckingham</h2>
-            <p class="section-text">O Palácio de Buckingham é a residência oficial da Rainha Elizabeth II em Londres. É um dos pontos turísticos mais importantes da cidade, conhecido por suas trocas de guarda, cerimônias e por ser o centro das atividades reais na capital inglesa.</p>
-            <div class="section-image">
-                <img src="img/buckingham-palace.jpg" alt="Buckingham Palace" class="img-fluid">
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: Edinburgh Castle -->
-    <section class="section" id="edinburgh-castle">
-        <div class="container">
-            <h2 class="section-title">Castelo de Edimburgo</h2>
-            <p class="section-text">O Castelo de Edimburgo, localizado na capital da Escócia, é um dos castelos mais visitados do Reino Unido. Com uma história que remonta ao século XII, o castelo oferece uma visão única da história medieval e das lutas pela independência escocesa.</p>
-            <div class="section-image">
-                <img src="img/edinburgh-castle.jpg" alt="Edinburgh Castle" class="img-fluid">
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: Oxford University -->
-    <section class="section bg-light" id="oxford-university">
-        <div class="container">
-            <h2 class="section-title">Universidade de Oxford</h2>
-            <p class="section-text">A Universidade de Oxford, fundada no século XII, é uma das universidades mais antigas e prestigiadas do mundo. Localizada na cidade de Oxford, ela atrai estudantes e turistas de todo o mundo, oferecendo visitas a vários de seus colégios históricos.</p>
-            <div class="section-image">
-                <img src="img/oxford-university.jpg" alt="Oxford University" class="img-fluid">
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
