@@ -108,10 +108,6 @@ body {
     transition: transform 0.5s ease-in-out; /* Transição suave */
 }
 
-.image-container:hover img {
-    transform: scale(1.1); /* Efeito de zoom suave ao passar o mouse */
-}
-
 /* ============================
    Card Styles
 ============================ */
@@ -337,8 +333,17 @@ body {
 ============================ */
 .navbar {
     padding: 1rem 2rem;
-    background-color: #222; /* Darker navbar background */
-    transition: all 0.3s ease;
+    background-color: transparent; /* Navbar transparente por padrão */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9); /* Cor de fundo quando rola a página */
 }
 
 .navbar a {
@@ -347,10 +352,10 @@ body {
     font-weight: 600;
 }
 
-
 .navbar-toggler-icon {
     background-color: #fff;
 }
+
 /* -----------------------------
    Degradê nas palavras (hover)
 ----------------------------- */
@@ -387,40 +392,6 @@ body {
 /* Hover */
 .navbar-brand:hover .gradient-text::after {
     opacity: 1;
-}
-
-/* ============================
-   Carousel Styles
-============================ */
-.carousel-item {
-    position: relative;
-    height: 80vh;
-}
-
-.carousel-item img {
-    object-fit: cover;
-    width: 100%;
-    height: 100vh;
-}
-
-.carousel-indicators {
-    position: absolute;
-    bottom: 10px;
-    left: 40%;
-    transform: translateX(-50%);
-    z-index: 10;
-}
-
-.carousel-indicators li {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 30%;
-    width: 38px;
-    height: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.carousel-indicators .active {
-    background-color: white;
 }
 
 /* ============================

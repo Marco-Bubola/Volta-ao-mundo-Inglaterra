@@ -39,8 +39,21 @@
             </ul>
         </div>
     </div>
-</nav><
+</nav>
 <script>
+    // Detecta o evento de rolagem
+    window.onscroll = function() {
+        let navbar = document.querySelector('.navbar');
+        
+        // Verifica a posição de rolagem
+        if (window.scrollY > 50) { // Se o usuário rolou mais de 50px
+            navbar.classList.add('scrolled'); // Adiciona a classe scrolled
+        } else {
+            navbar.classList.remove('scrolled'); // Remove a classe scrolled quando voltar ao topo
+        }
+    };
+    
+    // Adiciona o atributo data-text aos spans
     document.querySelectorAll('.gradient-text').forEach(span => {
       span.setAttribute('data-text', span.textContent);
     });
@@ -114,69 +127,53 @@
         });
     });
 </script>
-
-<!-- About Section -->
-<section id="interactive-section" class="content-section">
+<!-- História Section -->
+<section id="history-section" class="content-section">
     <div class="container-fluid p-0 position-relative">
-        <!-- Image Slider / Carousel -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000"> <!-- Set the interval to 5 seconds for slower slide change -->
-            <div class="carousel-inner">
-                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.3); z-index: 1;"></div> <!-- Gradient overlay -->
-   
-                <!-- Slide 1: História -->
-                <div class="carousel-item active" id="history">
-                    <img src="img/Battle-of-Philiphaugh.jpg" alt="História" class="img-fluid">
-                    <div class="text-container">
-                        <h2>História</h2>
-                        <p>A Inglaterra tem uma história rica que remonta aos tempos medievais, passando pela Revolução Industrial até a atualidade. O país teve grande influência na formação de muitas nações ao redor do mundo, sendo um dos maiores impérios da história.</p>
-                        <p>O reinado de Henrique VIII, as Guerras das Rosas e o impacto da Revolução Industrial são apenas alguns dos marcos históricos que moldaram a Inglaterra moderna.</p>
-                        <a href="historia.html" class="btn btn-primary">Leia Mais</a>
-                    </div>
-                </div>
-
-                <!-- Slide 2: Cultura -->
-                <div class="carousel-item" id="culture">
-                    <img src="img/Francis_Dodd_-_Dodd-98279_-_Whitehall_and_the_Palace_of_Westminster.jpg" alt="Cultura" class="img-fluid">
-                    <div class="text-container2">
-                        <h2>Cultura</h2>
-                        <p>A cultura inglesa é famosa por suas contribuições à literatura, música, cinema e artes. Desde Shakespeare até a música pop moderna, como os Beatles e Adele, a Inglaterra tem uma rica tradição cultural.</p>
-                        <p>Além disso, o país é conhecido por suas universidades de renome mundial, como Oxford e Cambridge, que são centros de cultura e conhecimento há séculos.</p>
-                        <a href="cultura.html" class="btn btn-primary">Leia Mais</a>
-                    </div>
-                </div>
-
-                <!-- Slide 3: Turismo -->
-                <div class="carousel-item" id="tourism">
-                    <img src="img/London_Eye_-_tunliweb.no.jpg" alt="Turismo" class="img-fluid">
-                    <div class="text-container4">
-                        <h2>Turismo</h2>
-                        <p>A Inglaterra é um destino turístico por excelência, com atrações famosas como o Big Ben, a Torre de Londres, Stonehenge e as cidades históricas de Bath e Oxford.</p>
-                        <p>Além dos marcos icônicos, a Inglaterra oferece uma rica diversidade de paisagens naturais, de montanhas a praias, tornando-se um destino perfeito para qualquer tipo de viajante.</p>
-                        <a href="turismo.html" class="btn btn-primary">Leia Mais</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Carousel controls -->
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-            
-            <!-- Carousel indicators centered -->
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
+        <div class="image-container">
+            <img src="img/Battle-of-Philiphaugh.jpg" alt="História" class="img-fluid rounded">
+        </div>
+        <!-- Text Content on the Right -->
+        <div class="text-container position-absolute">
+            <h2>História</h2>
+            <p>A Inglaterra tem uma história rica que remonta aos tempos medievais, passando pela Revolução Industrial até a atualidade. O país teve grande influência na formação de muitas nações ao redor do mundo, sendo um dos maiores impérios da história.</p>
+            <p>O reinado de Henrique VIII, as Guerras das Rosas e o impacto da Revolução Industrial são apenas alguns dos marcos históricos que moldaram a Inglaterra moderna.</p>
+            <a href="historia.html" class="btn btn-primary">Leia Mais</a>
         </div>
     </div>
 </section>
 
+<!-- Cultura Section -->
+<section id="culture-section" class="content-section">
+    <div class="container-fluid p-0 position-relative">
+        <div class="image-container">
+            <img src="img/Francis_Dodd_-_Dodd-98279_-_Whitehall_and_the_Palace_of_Westminster.jpg" alt="Cultura" class="img-fluid rounded">
+        </div>
+        <!-- Text Content on the Right -->
+        <div class="text-container2 position-absolute">
+            <h2>Cultura</h2>
+            <p>A cultura inglesa é famosa por suas contribuições à literatura, música, cinema e artes. Desde Shakespeare até a música pop moderna, como os Beatles e Adele, a Inglaterra tem uma rica tradição cultural.</p>
+            <p>Além disso, o país é conhecido por suas universidades de renome mundial, como Oxford e Cambridge, que são centros de cultura e conhecimento há séculos.</p>
+            <a href="cultura.html" class="btn btn-primary">Leia Mais</a>
+        </div>
+    </div>
+</section>
 
+<!-- Turismo Section -->
+<section id="tourism-section" class="content-section">
+    <div class="container-fluid p-0 position-relative">
+        <div class="image-container">
+            <img src="img/London_Eye_-_tunliweb.no.jpg" alt="Turismo" class="img-fluid rounded">
+        </div>
+        <!-- Text Content on the Right -->
+        <div class="text-container4 position-absolute">
+            <h2>Turismo</h2>
+            <p>A Inglaterra é um destino turístico por excelência, com atrações famosas como o Big Ben, a Torre de Londres, Stonehenge e as cidades históricas de Bath e Oxford.</p>
+            <p>Além dos marcos icônicos, a Inglaterra oferece uma rica diversidade de paisagens naturais, de montanhas a praias, tornando-se um destino perfeito para qualquer tipo de viajante.</p>
+            <a href="turismo.html" class="btn btn-primary">Leia Mais</a>
+        </div>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">

@@ -149,6 +149,15 @@ header .container-fluid {
     border-radius: 10px;
     margin-bottom: 1rem;
 }
+/* ============================
+   Card Image Styles (Ensure Same Size)
+============================ */
+.card-img-top {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do card */
+    height: 350px; /* Altura fixa para as imagens, você pode ajustar a altura conforme necessário */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    border-radius: 10px; /* Manter bordas arredondadas nas imagens */
+}
 
 .card-title {
     font-size: 1.5rem;
@@ -177,14 +186,22 @@ header .container-fluid {
     letter-spacing: 1px;
     transition: background-color 0.3s ease;
 }
-
 /* ============================
    Navbar Styles
 ============================ */
 .navbar {
     padding: 1rem 2rem;
-    background-color: #222; /* Darker navbar background */
-    transition: all 0.3s ease;
+    background-color: transparent; /* Navbar transparente por padrão */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background-color: rgba(34, 34, 34, 0.9); /* Cor de fundo quando rola a página */
 }
 
 .navbar a {

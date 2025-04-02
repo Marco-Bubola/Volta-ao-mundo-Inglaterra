@@ -36,8 +36,21 @@
             </ul>
         </div>
     </div>
-</nav><
+</nav>
 <script>
+    // Detecta o evento de rolagem
+    window.onscroll = function() {
+        let navbar = document.querySelector('.navbar');
+        
+        // Verifica a posição de rolagem
+        if (window.scrollY > 50) { // Se o usuário rolou mais de 50px
+            navbar.classList.add('scrolled'); // Adiciona a classe scrolled
+        } else {
+            navbar.classList.remove('scrolled'); // Remove a classe scrolled quando voltar ao topo
+        }
+    };
+    
+    // Adiciona o atributo data-text aos spans
     document.querySelectorAll('.gradient-text').forEach(span => {
       span.setAttribute('data-text', span.textContent);
     });
