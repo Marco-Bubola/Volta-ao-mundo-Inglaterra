@@ -1,323 +1,619 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cultura e Tradições na Inglaterra</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<!-- Navbar (Transparent) -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top transparent-navbar">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html" style="font-size: 2.5rem; font-weight: 700;">
-            <span class="gradient-text">INGLATERRA</span>
-          </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar (Transparent) -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top transparent-navbar"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="index.html"
+          style="font-size: 2.5rem; font-weight: 700"
+        >
+          <img
+            src="img/64px-Flag_of_the_United_Kingdom_(3-5).svg.png"
+            alt="bandeira inglaterra"
+          />
+          <span class="gradient-text">INGLATERRA</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html" style="font-size: 1.4rem; padding: 10px 15px;"><span class="gradient-text">INICIO</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="historia.html" style="font-size: 1.4rem; padding: 10px 15px;"><span class="gradient-text">HISTÓRIA</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cultura.html" style="font-size: 1.4rem; padding: 10px 15px;"><span class="gradient-text">CULTURA</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="turismo.html" style="font-size: 1.4rem; padding: 10px 15px;"><span class="gradient-text">TURISMO</span></a>
-                </li>
-            </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="index.html"
+                style="font-size: 1.4rem; padding: 10px 15px"
+                ><span class="gradient-text">INICIO</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="historia.html"
+                style="font-size: 1.4rem; padding: 10px 15px"
+                ><span class="gradient-text">HISTÓRIA</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="cultura.html"
+                style="font-size: 1.4rem; padding: 10px 15px"
+                ><span class="gradient-text">CULTURA</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="turismo.html"
+                style="font-size: 1.4rem; padding: 10px 15px"
+                ><span class="gradient-text">TURISMO</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="curiosidades.html"
+                style="font-size: 1.4rem; padding: 10px 15px"
+                ><span class="gradient-text">CURIOSIDADES</span></a
+              >
+            </li>
+          </ul>
         </div>
-    </div>
-</nav>
-<script>
-    // Detecta o evento de rolagem
-    window.onscroll = function() {
-        let navbar = document.querySelector('.navbar');
-        
+      </div>
+    </nav>
+    <script>
+      // Detecta o evento de rolagem
+      window.onscroll = function () {
+        let navbar = document.querySelector(".navbar");
+
         // Verifica a posição de rolagem
-        if (window.scrollY > 50) { // Se o usuário rolou mais de 50px
-            navbar.classList.add('scrolled'); // Adiciona a classe scrolled
+        if (window.scrollY > 50) {
+          // Se o usuário rolou mais de 50px
+          navbar.classList.add("scrolled"); // Adiciona a classe scrolled
         } else {
-            navbar.classList.remove('scrolled'); // Remove a classe scrolled quando voltar ao topo
+          navbar.classList.remove("scrolled"); // Remove a classe scrolled quando voltar ao topo
         }
-    };
-</script>
+      };
+    </script>
 
-  <!-- Header Section with Background Image -->
-<header class="text-white text-center py-5" style="background: url('img/2024660.jpg') no-repeat center center/cover; height: 50vh; position: relative;">
-    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.3);"></div> <!-- Gradient overlay -->
-    <div class="container-fluid position-relative z-index-2" style="position: absolute; top: 20%; left: 0; right: 0; bottom: 0;">
-        <h1 class="display-4" style="font-size: 3.5rem; font-weight: 700; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">Cultura e Tradições na Inglaterra</h1>
-        <p class="lead" style="font-size: 1.5rem; font-weight: 400; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);">País de riqueza histórica e cultural com influências globais, a Inglaterra é um dos maiores centros culturais do mundo.</p>
-    </div>
-</header>
+    <!-- Header Section with Background Image -->
+    <header
+      class="text-white text-center py-5"
+      style="
+        background: url('img/cultura-da-inglaterra-1.jpg') no-repeat center
+          center/cover;
+        height: 50vh;
+        position: relative;
+      "
+    >
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.3);
+        "
+      ></div>
+      <!-- Gradient overlay -->
+      <div
+        class="container-fluid position-relative z-index-2"
+        style="position: absolute; top: 20%; left: 0; right: 0; bottom: 0"
+      >
+        <h1
+          class="display-4"
+          style="
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+          "
+        >
+          Cultura e Tradições na Inglaterra
+        </h1>
+        <p
+          class="lead"
+          style="
+            font-size: 1.5rem;
+            font-weight: 400;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+          "
+        >
+          País de riqueza histórica e cultural com influências globais, a
+          Inglaterra é um dos maiores centros culturais do mundo.
+        </p>
+      </div>
+    </header>
 
-<!-- Section: Respeito à Família Real -->
-<section class="section bg-dark py-5" id="family-royal">
-    <div class="container-fluid">
-        <div class="row align-items-center" style="height: 70vh;">
-            <!-- Image on the left -->
-            <div class="col-md-6 d-flex justify-content-center align-items-center" style="height: 100%;">
-                <div class="section-image shadow-xl rounded transition-all hover:scale-105" style="height: 100%; width: 100%; overflow: hidden;">
-                    <img src="img/4-Members-of-the-Working-Royal-Family-in-the-Throne-Room-e1683597405534.webp" alt="Família Real Britânica" class="img-fluid rounded transition-transform hover:opacity-80" style="object-fit: cover; width: 100%; height: 100%; display: block;">
-                </div>
+    <!-- Section: Respeito à Família Real -->
+    <section class="section bg-dark py-5" id="family-royal">
+      <div class="container-fluid">
+        <div class="row align-items-center" style="height: 70vh">
+          <!-- Image on the left -->
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+            style="height: 100%"
+          >
+            <div
+              class="section-image shadow-xl rounded transition-all hover:scale-105"
+              style="height: 100%; width: 100%; overflow: hidden"
+            >
+              <img
+                src="img/4-Members-of-the-Working-Royal-Family-in-the-Throne-Room-e1683597405534.webp"
+                alt="Família Real Britânica"
+                class="img-fluid rounded transition-transform hover:opacity-80"
+                style="
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                "
+              />
             </div>
+          </div>
 
-            <!-- Text on the right -->
-            <div class="col-md-6 mt-4 mt-md-0">
-                <h2 class="section-title text-light mb-4 fade-in text-center">Respeito à Família Real</h2>
-                <p class="section-text text-light mb-3 fade-in">
-                    Os ingleses têm uma admiração profunda pela Família Real Britânica. A história milenar do país se confunde com a história da Realeza, e as tradições que se mantêm até hoje são um orgulho para os ingleses. O casamento do príncipe Harry com Meghan Markle em 2018 é um exemplo de como a realeza é venerada.
-                </p>
-                <p class="section-text text-light mb-3 fade-in">
-                    A Família Real Britânica é um símbolo de estabilidade, tradição e continuidade. Sua presença em eventos públicos e em cerimônias oficiais, como a abertura do Parlamento, tem uma grande importância tanto para os britânicos quanto para o mundo.
-                </p>
-                <p class="section-text text-light mb-3 fade-in">
-                    A adoração pela monarquia britânica é refletida em várias manifestações culturais, como o evento anual do Trooping the Colour, onde a rainha e sua família aparecem diante do público, com grande pompa e circunstância.
-                </p>
-                <p class="section-text text-light mb-3 fade-in">
-                    Além disso, a Família Real tem um impacto profundo em várias áreas, como a caridade e o apoio a instituições importantes, com membros da realeza frequentemente envolvidos em causas sociais e humanitárias ao redor do mundo.
-                </p>
-            </div>
+          <!-- Text on the right -->
+          <div class="col-md-6 mt-4 mt-md-0">
+            <h2 class="section-title text-light mb-4 fade-in text-center">
+              Respeito à Família Real
+            </h2>
+            <p class="section-text text-light mb-3 fade-in">
+              Os ingleses têm uma admiração profunda pela Família Real
+              Britânica. A história milenar do país se confunde com a história
+              da Realeza, e as tradições que se mantêm até hoje são um orgulho
+              para os ingleses. O casamento do príncipe Harry com Meghan Markle
+              em 2018 é um exemplo de como a realeza é venerada.
+            </p>
+            <p class="section-text text-light mb-3 fade-in">
+              A Família Real Britânica é um símbolo de estabilidade, tradição e
+              continuidade. Sua presença em eventos públicos e em cerimônias
+              oficiais, como a abertura do Parlamento, tem uma grande
+              importância tanto para os britânicos quanto para o mundo.
+            </p>
+            <p class="section-text text-light mb-3 fade-in">
+              A adoração pela monarquia britânica é refletida em várias
+              manifestações culturais, como o evento anual do Trooping the
+              Colour, onde a rainha e sua família aparecem diante do público,
+              com grande pompa e circunstância.
+            </p>
+            <p class="section-text text-light mb-3 fade-in">
+              Além disso, a Família Real tem um impacto profundo em várias
+              áreas, como a caridade e o apoio a instituições importantes, com
+              membros da realeza frequentemente envolvidos em causas sociais e
+              humanitárias ao redor do mundo.
+            </p>
+          </div>
         </div>
-    </div>
-</section>
-<script>
-    // A função que será chamada quando a página for rolada
-    window.addEventListener('scroll', function() {
-        const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 50) {  // Quando a rolagem ultrapassar 50px
-            navbar.classList.add('scrolled');  // Adiciona a classe scrolled
+      </div>
+    </section>
+    <script>
+      // A função que será chamada quando a página for rolada
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          // Quando a rolagem ultrapassar 50px
+          navbar.classList.add("scrolled"); // Adiciona a classe scrolled
         } else {
-            navbar.classList.remove('scrolled');  // Remove a classe scrolled
+          navbar.classList.remove("scrolled"); // Remove a classe scrolled
         }
-    });
-</script>
+      });
+    </script>
 
-
-<!-- Section: Comidas Típicas -->
-<section class="section bg-dark text-white py-5" id="food">
-    <div class="container-fluid">
+    <!-- Section: Comidas Típicas -->
+    <section class="section bg-dark text-white py-5" id="food">
+      <div class="container-fluid">
         <h2 class="section-title text-light">Comidas Típicas da Inglaterra</h2>
-        <p class="section-text">A culinária britânica é rica e variada. Alguns pratos tradicionais incluem o Full English Breakfast, Fish and Chips, Bangers and Mash, e muitos outros. Estes pratos são amplamente consumidos em toda a Inglaterra.</p>
+        <p class="section-text">
+          A culinária britânica é rica e variada. Alguns pratos tradicionais
+          incluem o Full English Breakfast, Fish and Chips, Bangers and Mash, e
+          muitos outros. Estes pratos são amplamente consumidos em toda a
+          Inglaterra.
+        </p>
         <div class="row">
-            <!-- Full English Breakfast Card -->
-            <div class="col-md-4 py-4">
-                <div class="card bg-dark text-white">
-                    <img src="img/R2798-photo-final-1.webp" alt="Full English Breakfast" class="card-img-top rounded">
-                    <div class="card-body">
-                        <h5 class="card-title text-light">Full English Breakfast</h5>
-                        <p class="card-text">Um típico café da manhã inglês, com ovos, feijão, torradas, salsicha, cogumelos e muito mais.</p>
-                    </div>
-                </div>
+          <!-- Full English Breakfast Card -->
+          <div class="col-md-4 py-4">
+            <div class="card bg-dark text-white">
+              <img
+                src="img/R2798-photo-final-1.webp"
+                alt="Full English Breakfast"
+                class="card-img-top rounded"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-light">Full English Breakfast</h5>
+                <p class="card-text">
+                  Um típico café da manhã inglês, com ovos, feijão, torradas,
+                  salsicha, cogumelos e muito mais.
+                </p>
+              </div>
             </div>
-            
-            <!-- Fish and Chips Card -->
-            <div class="col-md-4 py-4">
-                <div class="card bg-dark text-white">
-                    <img src="img/Fish_and_chips_blackpool.jpg" alt="Fish and Chips" class="card-img-top rounded">
-                    <div class="card-body">
-                        <h5 class="card-title text-light">Fish and Chips</h5>
-                        <p class="card-text">Peixe empanado frito, servido com batatas fritas e temperado com sal e vinagre de malte.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Scones Card -->
-            <div class="col-md-4 py-4">
-                <div class="card bg-dark text-white">
-                    <img src="img/7ONPYNMIFVHH7LWRF5OLZ3JCTY.jpg" alt="Scones" class="card-img-top rounded">
-                    <div class="card-body">
-                        <h5 class="card-title text-light">Scones</h5>
-                        <p class="card-text">Scones são biscoitos típicos, servidos com chá das cinco, acompanhados de geleias ou manteiga.</p>
-                    </div>
-                </div>
-            </div>
+          </div>
 
-            <!-- Bangers and Mash Card -->
-            <div class="col-md-4 py-4">
-                <div class="card bg-dark text-white">
-                    <img src="img/bangers_and_mash_with_80175_16x9.jpg" alt="Bangers and Mash" class="card-img-top rounded">
-                    <div class="card-body">
-                        <h5 class="card-title text-light">Bangers and Mash</h5>
-                        <p class="card-text">Prato típico britânico composto por salsichas grelhadas e purê de batatas, frequentemente acompanhado de molho de cebola.</p>
-                    </div>
-                </div>
+          <!-- Fish and Chips Card -->
+          <div class="col-md-4 py-4">
+            <div class="card bg-dark text-white">
+              <img
+                src="img/Fish_and_chips_blackpool.jpg"
+                alt="Fish and Chips"
+                class="card-img-top rounded"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-light">Fish and Chips</h5>
+                <p class="card-text">
+                  Peixe empanado frito, servido com batatas fritas e temperado
+                  com sal e vinagre de malte.
+                </p>
+              </div>
             </div>
+          </div>
 
-            <!-- Shepherd's Pie Card -->
-            <div class="col-md-4 py-4">
-                <div class="card bg-dark text-white">
-                    <img src="img/Beef_Shepherds_Pie_D43_PHOTO_2-1.jpg" alt="Shepherd's Pie" class="card-img-top rounded">
-                    <div class="card-body">
-                        <h5 class="card-title text-light">Shepherd's Pie</h5>
-                        <p class="card-text">Torta de carne de cordeiro cozida, coberta com purê de batatas e assada até dourar.</p>
-                    </div>
-                </div>
+          <!-- Scones Card -->
+          <div class="col-md-4 py-4">
+            <div class="card bg-dark text-white">
+              <img
+                src="img/7ONPYNMIFVHH7LWRF5OLZ3JCTY.jpg"
+                alt="Scones"
+                class="card-img-top rounded"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-light">Scones</h5>
+                <p class="card-text">
+                  Scones são biscoitos típicos, servidos com chá das cinco,
+                  acompanhados de geleias ou manteiga.
+                </p>
+              </div>
             </div>
+          </div>
 
-            <!-- Roast Beef and Yorkshire Pudding Card -->
-            <div class="col-md-4 py-4">
-                <div class="card bg-dark text-white">
-                    <img src="img/roastbeefwithyorkshi_87605_16x9.jpg" alt="Roast Beef and Yorkshire Pudding" class="card-img-top rounded">
-                    <div class="card-body">
-                        <h5 class="card-title text-light">Roast Beef and Yorkshire Pudding</h5>
-                        <p class="card-text">Um clássico da culinária britânica, composto por carne assada com um saboroso pudim de Yorkshire e vegetais.</p>
-                    </div>
-                </div>
+          <!-- Bangers and Mash Card -->
+          <div class="col-md-4 py-4">
+            <div class="card bg-dark text-white">
+              <img
+                src="img/bangers_and_mash_with_80175_16x9.jpg"
+                alt="Bangers and Mash"
+                class="card-img-top rounded"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-light">Bangers and Mash</h5>
+                <p class="card-text">
+                  Prato típico britânico composto por salsichas grelhadas e purê
+                  de batatas, frequentemente acompanhado de molho de cebola.
+                </p>
+              </div>
             </div>
+          </div>
+
+          <!-- Shepherd's Pie Card -->
+          <div class="col-md-4 py-4">
+            <div class="card bg-dark text-white">
+              <img
+                src="img/Beef_Shepherds_Pie_D43_PHOTO_2-1.jpg"
+                alt="Shepherd's Pie"
+                class="card-img-top rounded"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-light">Shepherd's Pie</h5>
+                <p class="card-text">
+                  Torta de carne de cordeiro cozida, coberta com purê de batatas
+                  e assada até dourar.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Roast Beef and Yorkshire Pudding Card -->
+          <div class="col-md-4 py-4">
+            <div class="card bg-dark text-white">
+              <img
+                src="img/roastbeefwithyorkshi_87605_16x9.jpg"
+                alt="Roast Beef and Yorkshire Pudding"
+                class="card-img-top rounded"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-light">
+                  Roast Beef and Yorkshire Pudding
+                </h5>
+                <p class="card-text">
+                  Um clássico da culinária britânica, composto por carne assada
+                  com um saboroso pudim de Yorkshire e vegetais.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
-<!-- Section: Artes -->
-<section class="section bg-dark py-5" id="arts">
-    <div class="container-fluid">
-        <div class="row align-items-center" style="height: 70vh;">
-          
-            <div class="col-md-6 mt-4 mt-md-0">
-                <h2 class="section-title text-light mb-4 fade-in text-center">Artes</h2>
-                <p class="section-text text-light mb-3 fade-in">
-                    A Inglaterra tem uma longa tradição de produção artística mundialmente reconhecida. Escritores como William Shakespeare e músicos como The Beatles são apenas alguns exemplos da riqueza cultural do país.
-                </p>
-                <p class="section-text text-light mb-3 fade-in">
-                    Desde o teatro até a música e as artes visuais, a Inglaterra se destaca como um centro global para a expressão artística. A cidade de Londres, com sua vasta gama de museus, teatros e galerias, é um exemplo claro dessa herança artística vibrante.
-                </p>
-                <p class="section-text text-light mb-3 fade-in">
-                    A arte britânica também se reflete em movimentos de vanguarda, como o modernismo, e na cena contemporânea, com artistas como Banksy, cuja arte urbana se espalha pelas ruas de Londres e pelo mundo.
-                </p>
+      </div>
+    </section>
+    <!-- Section: Artes -->
+    <section class="section bg-dark py-5" id="arts">
+      <div class="container-fluid">
+        <div class="row align-items-center" style="height: 70vh">
+          <div class="col-md-6 mt-4 mt-md-0">
+            <h2 class="section-title text-light mb-4 fade-in text-center">
+              Artes
+            </h2>
+            <p class="section-text text-light mb-3 fade-in">
+              A Inglaterra tem uma longa tradição de produção artística
+              mundialmente reconhecida. Escritores como William Shakespeare e
+              músicos como The Beatles são apenas alguns exemplos da riqueza
+              cultural do país.
+            </p>
+            <p class="section-text text-light mb-3 fade-in">
+              Desde o teatro até a música e as artes visuais, a Inglaterra se
+              destaca como um centro global para a expressão artística. A cidade
+              de Londres, com sua vasta gama de museus, teatros e galerias, é um
+              exemplo claro dessa herança artística vibrante.
+            </p>
+            <p class="section-text text-light mb-3 fade-in">
+              A arte britânica também se reflete em movimentos de vanguarda,
+              como o modernismo, e na cena contemporânea, com artistas como
+              Banksy, cuja arte urbana se espalha pelas ruas de Londres e pelo
+              mundo.
+            </p>
+          </div>
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+            style="height: 100%"
+          >
+            <div
+              class="section-image shadow-xl rounded transition-all hover:scale-105"
+              style="height: 100%; width: 100%; overflow: hidden"
+            >
+              <img
+                src="img/galerias-arte-londres.webp"
+                alt="Artes na Inglaterra"
+                class="img-fluid rounded transition-transform hover:opacity-80"
+                style="
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                "
+              />
             </div>
-            <div class="col-md-6 d-flex justify-content-center align-items-center" style="height: 100%;">
-                <div class="section-image shadow-xl rounded transition-all hover:scale-105" style="height: 100%; width: 100%; overflow: hidden;">
-                    <img src="img/galerias-arte-londres.webp" alt="Artes na Inglaterra" class="img-fluid rounded transition-transform hover:opacity-80" style="object-fit: cover; width: 100%; height: 100%; display: block;">
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-</section>
-<!-- Section: Football -->
-<section class="section bg-dark py-5" id="football">
-    <div class="container-fluid">
-        <div class="row align-items-center" style="height: 70vh;">
-            <!-- Image on the left -->
-            <div class="col-md-6 d-flex justify-content-center align-items-center" style="height: 100%;">
-                <div class="section-image shadow-xl rounded transition-all hover:scale-105" style="height: 100%; width: 100%; overflow: hidden;">
-                    <img src="img/r1044017_1296x729_16-9.png" alt="Football" class="img-fluid rounded transition-transform hover:opacity-80" style="object-fit: cover; width: 100%; height: 100%; display: block;">
-                </div>
+      </div>
+    </section>
+    <!-- Section: Football -->
+    <section class="section bg-dark py-5" id="football">
+      <div class="container-fluid">
+        <div class="row align-items-center" style="height: 70vh">
+          <!-- Image on the left -->
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+            style="height: 100%"
+          >
+            <div
+              class="section-image shadow-xl rounded transition-all hover:scale-105"
+              style="height: 100%; width: 100%; overflow: hidden"
+            >
+              <img
+                src="img/r1044017_1296x729_16-9.png"
+                alt="Football"
+                class="img-fluid rounded transition-transform hover:opacity-80"
+                style="
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                "
+              />
             </div>
+          </div>
 
-            <!-- Text on the right -->
-            <div class="col-md-6 mt-4 mt-md-0">
-                <h2 class="section-title text-light mb-4 fade-in text-center">Football</h2>
-                <p class="section-text text-light mb-3 fade-in">
-                    Os ingleses inventaram o futebol e ainda são apaixonados por ele. A Premier League é a principal competição nacional, e o futebol está profundamente enraizado na cultura do país.
-                </p>
-                <p class="section-text text-light mb-3 fade-in">
-                    O futebol inglês tem uma longa tradição e é muito mais do que um esporte. As rivalidades entre clubes, como o clássico entre Liverpool e Manchester United, são eventos que capturam a atenção de milhões de fãs ao redor do mundo.
-                </p>
-                <p class="section-text text-light fade-in">
-                    A Inglaterra continua a ser uma potência mundial no futebol, com a Premier League atraindo os melhores jogadores e técnicos de todo o planeta, além de ser uma liga vista como a mais competitiva do mundo.
-                </p>
-            </div>
+          <!-- Text on the right -->
+          <div class="col-md-6 mt-4 mt-md-0">
+            <h2 class="section-title text-light mb-4 fade-in text-center">
+              Football
+            </h2>
+            <p class="section-text text-light mb-3 fade-in">
+              Os ingleses inventaram o futebol e ainda são apaixonados por ele.
+              A Premier League é a principal competição nacional, e o futebol
+              está profundamente enraizado na cultura do país.
+            </p>
+            <p class="section-text text-light mb-3 fade-in">
+              O futebol inglês tem uma longa tradição e é muito mais do que um
+              esporte. As rivalidades entre clubes, como o clássico entre
+              Liverpool e Manchester United, são eventos que capturam a atenção
+              de milhões de fãs ao redor do mundo.
+            </p>
+            <p class="section-text text-light fade-in">
+              A Inglaterra continua a ser uma potência mundial no futebol, com a
+              Premier League atraindo os melhores jogadores e técnicos de todo o
+              planeta, além de ser uma liga vista como a mais competitiva do
+              mundo.
+            </p>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- Section: Pubs -->
-<section class="section bg-dark py-5" id="pubs">
-    <div class="container-fluid">
-        <div class="row align-items-center" style="height: 70vh;">
-                     <div class="col-md-6 mt-4 mt-md-0">
-                <h2 class="section-title text-light mb-4 fade-in text-center">Pubs</h2>
-                <p class="section-text text-light mb-3 fade-in">
-                    Os pubs são uma instituição na Inglaterra. É comum que, ao fim do expediente, os ingleses se encontrem em um pub para tomar uma pint com os amigos.
-                </p>
-                <p class="section-text text-light mb-3 fade-in">
-                    Além de serem locais para socializar, os pubs têm um papel importante na cultura inglesa, sendo centros de encontro para eventos esportivos, comemorações e até para conhecer novas pessoas.
-                </p>
-                <p class="section-text text-light fade-in">
-                    Cada pub tem seu próprio charme, com muitos oferecendo uma vasta seleção de cervejas artesanais locais e comidas típicas como o famoso "Sunday Roast" ou fish and chips.
-                </p>
+    <!-- Section: Pubs -->
+    <section class="section bg-dark py-5" id="pubs">
+      <div class="container-fluid">
+        <div class="row align-items-center" style="height: 70vh">
+          <div class="col-md-6 mt-4 mt-md-0">
+            <h2 class="section-title text-light mb-4 fade-in text-center">
+              Pubs
+            </h2>
+            <p class="section-text text-light mb-3 fade-in">
+              Os pubs são uma instituição na Inglaterra. É comum que, ao fim do
+              expediente, os ingleses se encontrem em um pub para tomar uma pint
+              com os amigos.
+            </p>
+            <p class="section-text text-light mb-3 fade-in">
+              Além de serem locais para socializar, os pubs têm um papel
+              importante na cultura inglesa, sendo centros de encontro para
+              eventos esportivos, comemorações e até para conhecer novas
+              pessoas.
+            </p>
+            <p class="section-text text-light fade-in">
+              Cada pub tem seu próprio charme, com muitos oferecendo uma vasta
+              seleção de cervejas artesanais locais e comidas típicas como o
+              famoso "Sunday Roast" ou fish and chips.
+            </p>
+          </div>
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+            style="height: 100%"
+          >
+            <div
+              class="section-image shadow-xl rounded transition-all hover:scale-105"
+              style="height: 100%; width: 100%; overflow: hidden"
+            >
+              <img
+                src="img/AdobeStock_377302021_Editorial_Use_Only-1024x683.jpg"
+                alt="Pubs na Inglaterra"
+                class="img-fluid rounded transition-transform hover:opacity-80"
+                style="
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                "
+              />
             </div>
-            <div class="col-md-6 d-flex justify-content-center align-items-center" style="height: 100%;">
-                <div class="section-image shadow-xl rounded transition-all hover:scale-105" style="height: 100%; width: 100%; overflow: hidden;">
-                    <img src="img/AdobeStock_377302021_Editorial_Use_Only-1024x683.jpg" alt="Pubs na Inglaterra" class="img-fluid rounded transition-transform hover:opacity-80" style="object-fit: cover; width: 100%; height: 100%; display: block;">
-                </div>
-            </div>
-         
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- Section: População bem educada -->
-<section class="section bg-dark py-5" id="education">
-    <div class="container-fluid">
-        <div class="row align-items-center" style="height: 70vh;">
-            <!-- Image on the left -->
-            <div class="col-md-6 d-flex justify-content-center align-items-center" style="height: 100%;">
-                <div class="section-image shadow-xl rounded transition-all hover:scale-105" style="height: 100%; width: 100%; overflow: hidden;">
-                    <img src="img/immigration-fuels-uk-population-surge.jpg" alt="População Educada" class="img-fluid rounded transition-transform hover:opacity-80" style="object-fit: cover; width: 100%; height: 100%; display: block;">
-                </div>
+    <!-- Section: População bem educada -->
+    <section class="section bg-dark py-5" id="education">
+      <div class="container-fluid">
+        <div class="row align-items-center" style="height: 70vh">
+          <!-- Image on the left -->
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+            style="height: 100%"
+          >
+            <div
+              class="section-image shadow-xl rounded transition-all hover:scale-105"
+              style="height: 100%; width: 100%; overflow: hidden"
+            >
+              <img
+                src="img/immigration-fuels-uk-population-surge.jpg"
+                alt="População Educada"
+                class="img-fluid rounded transition-transform hover:opacity-80"
+                style="
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                "
+              />
             </div>
+          </div>
 
-            <!-- Text on the right -->
-            <div class="col-md-6 mt-4 mt-md-0">
-                <h2 class="section-title text-light mb-4 fade-in text-center">População Bem Educada</h2>
-                <p class="section-text text-light mb-3 fade-in">
-                    Os ingleses são conhecidos por sua educação e polidez. Embora possam parecer mais reservados, são uma população que respeita o espaço dos outros e é extremamente educada.
-                </p>
-                <p class="section-text text-light mb-3 fade-in">
-                    A educação é altamente valorizada na Inglaterra, e o sistema educacional, que inclui algumas das universidades mais renomadas do mundo, como Oxford e Cambridge, é um reflexo disso.
-                </p>
-                <p class="section-text text-light fade-in">
-                    A educação e a cultura de respeito são essenciais para o convívio social no país. O inglês é falado com uma precisão gramatical e formalidade que reflete o apreço pela clareza e respeito na comunicação.
-                </p>
-            </div>
+          <!-- Text on the right -->
+          <div class="col-md-6 mt-4 mt-md-0">
+            <h2 class="section-title text-light mb-4 fade-in text-center">
+              População Bem Educada
+            </h2>
+            <p class="section-text text-light mb-3 fade-in">
+              Os ingleses são conhecidos por sua educação e polidez. Embora
+              possam parecer mais reservados, são uma população que respeita o
+              espaço dos outros e é extremamente educada.
+            </p>
+            <p class="section-text text-light mb-3 fade-in">
+              A educação é altamente valorizada na Inglaterra, e o sistema
+              educacional, que inclui algumas das universidades mais renomadas
+              do mundo, como Oxford e Cambridge, é um reflexo disso.
+            </p>
+            <p class="section-text text-light fade-in">
+              A educação e a cultura de respeito são essenciais para o convívio
+              social no país. O inglês é falado com uma precisão gramatical e
+              formalidade que reflete o apreço pela clareza e respeito na
+              comunicação.
+            </p>
+          </div>
         </div>
-    </div>
-</section>
-<!-- Section: Ironia e Sarcasmo -->
-<section class="section bg-dark py-5" id="irony">
-    <div class="container-fluid">
-        <div class="row align-items-center" style="height: 70vh;">
-           
-            <div class="col-md-6 mt-4 mt-md-0">
-                <h2 class="section-title text-light mb-4 fade-in text-center">Ironia e Sarcasmo</h2>
-                <p class="section-text text-light mb-3 fade-in">
-                    O humor britânico é famoso pela ironia e sarcasmo. Séries como Monty Python exemplificam a sutileza do humor britânico, com piadas e situações cheias de sarcasmo e ironia.
-                </p>
-                <p class="section-text text-light mb-3 fade-in">
-                    O humor britânico muitas vezes é sutil e, ao mesmo tempo, extremamente engraçado. A ironia é frequentemente usada em comentários e observações cotidianas, muitas vezes de forma que só pode ser entendida por aqueles que conhecem bem a cultura britânica.
-                </p>
-                <p class="section-text text-light fade-in">
-                    A comédia britânica tem uma longa tradição, e continua a influenciar comédias em todo o mundo. Monty Python, Mr. Bean, e The Office (versão britânica) são apenas alguns exemplos que marcaram gerações.
-                </p>
+      </div>
+    </section>
+    <!-- Section: Ironia e Sarcasmo -->
+    <section class="section bg-dark py-5" id="irony">
+      <div class="container-fluid">
+        <div class="row align-items-center" style="height: 70vh">
+          <div class="col-md-6 mt-4 mt-md-0">
+            <h2 class="section-title text-light mb-4 fade-in text-center">
+              Ironia e Sarcasmo
+            </h2>
+            <p class="section-text text-light mb-3 fade-in">
+              O humor britânico é famoso pela ironia e sarcasmo. Séries como
+              Monty Python exemplificam a sutileza do humor britânico, com
+              piadas e situações cheias de sarcasmo e ironia.
+            </p>
+            <p class="section-text text-light mb-3 fade-in">
+              O humor britânico muitas vezes é sutil e, ao mesmo tempo,
+              extremamente engraçado. A ironia é frequentemente usada em
+              comentários e observações cotidianas, muitas vezes de forma que só
+              pode ser entendida por aqueles que conhecem bem a cultura
+              britânica.
+            </p>
+            <p class="section-text text-light fade-in">
+              A comédia britânica tem uma longa tradição, e continua a
+              influenciar comédias em todo o mundo. Monty Python, Mr. Bean, e
+              The Office (versão britânica) são apenas alguns exemplos que
+              marcaram gerações.
+            </p>
+          </div>
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+            style="height: 100%"
+          >
+            <div
+              class="section-image shadow-xl rounded transition-all hover:scale-105"
+              style="height: 100%; width: 100%; overflow: hidden"
+            >
+              <img
+                src="img/theresa-may-istock.jpg"
+                alt="Ironia e Sarcasmo"
+                class="img-fluid rounded transition-transform hover:opacity-80"
+                style="
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                "
+              />
             </div>
-            <div class="col-md-6 d-flex justify-content-center align-items-center" style="height: 100%;">
-                <div class="section-image shadow-xl rounded transition-all hover:scale-105" style="height: 100%; width: 100%; overflow: hidden;">
-                    <img src="img/theresa-may-istock.jpg" alt="Ironia e Sarcasmo" class="img-fluid rounded transition-transform hover:opacity-80" style="object-fit: cover; width: 100%; height: 100%; display: block;">
-                </div>
-            </div>
-
-           
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Cultura e Tradições na Inglaterra - Todos os direitos reservados</p>
+      <p>
+        &copy; 2025 Cultura e Tradições na Inglaterra - Todos os direitos
+        reservados
+      </p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
-

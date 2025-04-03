@@ -1,189 +1,447 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/uk-flag-round-circle-icon.svg"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inglaterra - Descubra o País</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="index.css">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<body>
-<!-- Navbar (Transparent) -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top transparent-navbar">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#" style="font-size: 2.5rem; font-weight: 700;">
-            <span class="gradient-text">INGLATERRA</span>
-          </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+  <body>
+    <!-- Navbar (Transparent) -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top transparent-navbar"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="#"
+          style="
+            font-size: 2.5rem;
+            font-weight: 700;
+            position: relative;
+            z-index: 3;
+          "
+        >
+          <img
+            src="img/64px-Flag_of_the_United_Kingdom_(3-5).svg.png"
+            alt="bandeira inglaterra"
+          />
+          <span class="gradient-text">INGLATERRA</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about" style="font-size: 1.4rem; padding: 10px 15px;"><span class="gradient-text">SOBRE</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="historia.html" style="font-size: 1.4rem; padding: 10px 15px;"><span class="gradient-text">HISTÓRIA</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cultura.html" style="font-size: 1.4rem; padding: 10px 15px;"><span class="gradient-text">CULTURA</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="turismo.html" style="font-size: 1.4rem; padding: 10px 15px;"><span class="gradient-text">TURISMO</span></a>
-                </li>
-            </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#about"
+                style="font-size: 1.4rem; padding: 10px 15px"
+                ><span class="gradient-text">SOBRE</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="historia.html"
+                style="font-size: 1.4rem; padding: 10px 15px"
+                ><span class="gradient-text">HISTÓRIA</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="cultura.html"
+                style="font-size: 1.4rem; padding: 10px 15px"
+                ><span class="gradient-text">CULTURA</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="turismo.html"
+                style="font-size: 1.4rem; padding: 10px 15px"
+                ><span class="gradient-text">TURISMO</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="curiosidades.html"
+                style="font-size: 1.4rem; padding: 10px 15px"
+                ><span class="gradient-text">CURIOSIDADES</span></a
+              >
+            </li>
+          </ul>
         </div>
-    </div>
-</nav>
-<script>
-    // Detecta o evento de rolagem
-    window.onscroll = function() {
-        let navbar = document.querySelector('.navbar');
-        
+      </div>
+    </nav>
+    <script>
+      // Detecta o evento de rolagem
+      window.onscroll = function () {
+        let navbar = document.querySelector(".navbar");
+
         // Verifica a posição de rolagem
-        if (window.scrollY > 50) { // Se o usuário rolou mais de 50px
-            navbar.classList.add('scrolled'); // Adiciona a classe scrolled
+        if (window.scrollY > 50) {
+          // Se o usuário rolou mais de 50px
+          navbar.classList.add("scrolled"); // Adiciona a classe scrolled
         } else {
-            navbar.classList.remove('scrolled'); // Remove a classe scrolled quando voltar ao topo
+          navbar.classList.remove("scrolled"); // Remove a classe scrolled quando voltar ao topo
         }
-    };
-    
-    // Adiciona o atributo data-text aos spans
-    document.querySelectorAll('.gradient-text').forEach(span => {
-      span.setAttribute('data-text', span.textContent);
-    });
-  </script>
-  
-<!-- Hero Section -->
-<div class="hero-section">
-    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.3); z-index: 1;"></div> <!-- Gradient overlay -->
-   
-    <div class="container-fluid text-center" style="position: relative; z-index: 2;">
-        <h1 class="display-4">Bem-vindo à Inglaterra</h1>
-        <p class="lead">Explore a terra da cultura rica, história fascinante e paisagens impressionantes.</p>
-        <a href="#about" class="cta-btn">Descubra Mais</a>
+      };
+
+      // Adiciona o atributo data-text aos spans
+      document.querySelectorAll(".gradient-text").forEach((span) => {
+        span.setAttribute("data-text", span.textContent);
+      });
+    </script>
+    <!-- Hero Section -->
+    <div
+      class="hero-section"
+      style="
+        background: url('img/england_by_paynejohnsson_dgpelwr-pre.jpg')
+          no-repeat center center;
+        background-size: cover;
+      "
+    >
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 1;
+        "
+      ></div>
+      <!-- Gradient overlay -->
+
+      <div
+        class="container-fluid text-center"
+        style="position: relative; z-index: 2"
+      >
+        <h1 class="display-4 text-white">Bem-vindo à Inglaterra</h1>
+        <p class="lead text-white">
+          Explore a terra da cultura rica, história fascinante e paisagens
+          impressionantes.
+        </p>
+        <a href="#about" class="cta-btn btn btn-outline-light">Descubra Mais</a>
+      </div>
     </div>
-</div>
 
-<!-- About Section -->
-<section id="about" class="about-section scroll">
-    <div class="container-fluid p-0 position-relative">
-     
-        <div class="image-container">
-            <img src="img/1000_F_108472954_A3Y42CvYf3GLzKKb5CJjVxuoal8TLE9M.jpg" alt="Londres" class="img-fluid rounded">
-        </div>
-
-        <!-- Text Content on the Right -->
-        <div class="text-container3 position-absolute">
+    <!-- About Section -->
+    <section id="about" class="about-section" style="margin: 0; padding: 0">
+      <div class="container-fluid bg-dark">
+        <div class="row no-gutters" style="height: 85vh">
+          <div class="col-lg-5 p-5">
             <h2>Sobre a Inglaterra</h2>
-            <p>A Inglaterra é um país rico em história, cultura e inovação. Com sua monarquia histórica e cidades vibrantes, é um destino inesquecível para todos. A Inglaterra também é conhecida por sua contribuição significativa para as artes, literatura e ciências, além de ser uma potência econômica global.</p>
-            <p>Com marcos como o Big Ben, a Torre de Londres e o Palácio de Buckingham, a Inglaterra oferece uma experiência única para os turistas. O país também é famoso por suas universidades, como Oxford e Cambridge, e seu sistema de transporte público, que conecta as cidades de forma eficiente.</p>
+            <p>
+              A Inglaterra é um país rico em história, cultura e inovação. Com
+              sua monarquia histórica e cidades vibrantes, é um destino
+              inesquecível para todos. A Inglaterra também é conhecida por sua
+              contribuição significativa para as artes, literatura e ciências,
+              além de ser uma potência econômica global.
+            </p>
+            <p>
+              Com marcos como o Big Ben, a Torre de Londres e o Palácio de
+              Buckingham, a Inglaterra oferece uma experiência única para os
+              turistas. O país também é famoso por suas universidades, como
+              Oxford e Cambridge, e seu sistema de transporte público, que
+              conecta as cidades de forma eficiente.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <img
+              src="img/Design sem nome (3).png"
+              alt="Londres"
+              style="width: 99%"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container-flud bg-dark">
+        <div class="row no-gutters">
+          <div class="col-lg-12 p-5">
+            <h2>Bem-vindo à Navegação Cultural da Inglaterra</h2>
+            <p style="text-align: center">
+              Explore as seções abaixo para conhecer mais sobre a rica história,
+              cultura, turismo e culinária da Inglaterra.
+            </p>
+            <p style="text-align: center">
+              Clique nos cartões para navegar diretamente para o conteúdo que
+              mais te interessa. Vamos embarcar nessa jornada juntos!
+            </p>
+          </div>
 
-            <!-- Cards below the text to navigate to specific slides -->
-            <div class="cards-container">
-                <div class="card" onclick="scrollToSlide(0)">
-                    <img src="img/Battle-of-Philiphaugh.jpg" alt="História" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">História</h5>
-                    </div>
+          <!-- Cards para navegar para as seções -->
+          <div class="row d-flex justify-content-center">
+            <!-- Card de História -->
+            <div class="col-sm-3 mb-3">
+              <div
+                class="card bg-dark"
+                onclick="scrollToSection('history-section')"
+              >
+                <img
+                  src="img/Battle-of-Philiphaugh.jpg"
+                  alt="História"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">História</h5>
                 </div>
-                <div class="card" onclick="scrollToSlide(1)">
-                    <img src="img/Francis_Dodd_-_Dodd-98279_-_Whitehall_and_the_Palace_of_Westminster.jpg" alt="Cultura" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Cultura</h5>
-                    </div>
-                </div>
-                <div class="card" onclick="scrollToSlide(2)">
-                    <img src="img/London_Eye_-_tunliweb.no.jpg" alt="Turismo" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Turismo</h5>
-                    </div>
-                </div>
+              </div>
             </div>
-        </div>         
-    </div>
-</section>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // Ajuste de rolagem suave para links com o href="#about"
-        document.querySelectorAll('a[href="#about"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault(); // Impede o comportamento padrão de rolagem
 
-                const target = document.querySelector('#about'); // Seção destino
-                const navbarHeight = document.querySelector('.navbar').offsetHeight; // Altura da navbar
+            <!-- Card de Cultura -->
+            <div class="col-sm-3 mb-3">
+              <div
+                class="card bg-dark"
+                onclick="scrollToSection('culture-section')"
+              >
+                <img
+                  src="img/Francis_Dodd_-_Dodd-98279_-_Whitehall_and_the_Palace_of_Westminster.jpg"
+                  alt="Cultura"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cultura</h5>
+                </div>
+              </div>
+            </div>
 
-                // Rolagem suave para a seção #about, considerando a altura da navbar
-                window.scrollTo({
-                    top: target.offsetTop - navbarHeight, // Ajuste a posição da rolagem
-                    behavior: 'smooth' // Rolagem suave
-                });
-            });
-        });
-    });
-</script>
-<!-- História Section -->
-<section id="history-section" class="content-section">
-    <div class="container-fluid p-0 position-relative">
-        <div class="image-container">
-            <img src="img/Battle-of-Philiphaugh.jpg" alt="História" class="img-fluid rounded">
+            <!-- Card de Turismo -->
+            <div class="col-sm-3 mb-3">
+              <div
+                class="card bg-dark"
+                onclick="scrollToSection('tourism-section')"
+              >
+                <img
+                  src="img/London_Eye_-_tunliweb.no.jpg"
+                  alt="Turismo"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Turismo</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Card de Curiosidades -->
+            <div class="col-sm-3 mb-3">
+              <div
+                class="card bg-dark"
+                onclick="scrollToSection('curiosities-section')"
+              >
+                <img
+                  src="img/Design sem nome (4).png"
+                  alt="Curiosidades"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Curiosidades</h5>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Text Content on the Right -->
-        <div class="text-container position-absolute">
+      </div>
+    </section>
+    <script>
+      function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          // Altura da navbar
+          const navbarHeight = document.querySelector(".navbar").offsetHeight;
+
+          // Rolagem suave, considerando a altura da navbar
+          window.scrollTo({
+            top: section.offsetTop - navbarHeight, // Ajusta a posição de rolagem
+            behavior: "smooth", // Rolagem suave
+          });
+        }
+      }
+    </script>
+
+    <!-- História Section -->
+    <section id="history-section" class="content-section py-5 bg-dark">
+      <div class="container-fluid bg-dark p-0">
+        <div class="row no-gutters" style="height: 70vh">
+          <div class="col-lg-6">
+            <img
+              src="img/Battle-of-Philiphaugh.jpg"
+              alt="História"
+              class="img-fluid styled-frame"
+            />
+          </div>
+          <div
+            class="col-lg-6 p-5 d-flex flex-column justify-content-center align-items-center"
+          >
             <h2>História</h2>
-            <p>A Inglaterra tem uma história rica que remonta aos tempos medievais, passando pela Revolução Industrial até a atualidade. O país teve grande influência na formação de muitas nações ao redor do mundo, sendo um dos maiores impérios da história.</p>
-            <p>O reinado de Henrique VIII, as Guerras das Rosas e o impacto da Revolução Industrial são apenas alguns dos marcos históricos que moldaram a Inglaterra moderna.</p>
+            <p>
+              A Inglaterra tem uma história rica que remonta aos tempos
+              medievais, passando pela Revolução Industrial até a atualidade. O
+              país teve grande influência na formação de muitas nações ao redor
+              do mundo, sendo um dos maiores impérios da história.
+            </p>
+            <p>
+              O reinado de Henrique VIII, as Guerras das Rosas e o impacto da
+              Revolução Industrial são apenas alguns dos marcos históricos que
+              moldaram a Inglaterra moderna.
+            </p>
             <a href="historia.html" class="btn btn-primary">Leia Mais</a>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- Cultura Section -->
-<section id="culture-section" class="content-section">
-    <div class="container-fluid p-0 position-relative">
-        <div class="image-container">
-            <img src="img/Francis_Dodd_-_Dodd-98279_-_Whitehall_and_the_Palace_of_Westminster.jpg" alt="Cultura" class="img-fluid rounded">
-        </div>
-        <!-- Text Content on the Right -->
-        <div class="text-container2 position-absolute">
-            <h2>Cultura</h2>
-            <p>A cultura inglesa é famosa por suas contribuições à literatura, música, cinema e artes. Desde Shakespeare até a música pop moderna, como os Beatles e Adele, a Inglaterra tem uma rica tradição cultural.</p>
-            <p>Além disso, o país é conhecido por suas universidades de renome mundial, como Oxford e Cambridge, que são centros de cultura e conhecimento há séculos.</p>
-            <a href="cultura.html" class="btn btn-primary">Leia Mais</a>
-        </div>
-    </div>
-</section>
-
-<!-- Turismo Section -->
-<section id="tourism-section" class="content-section">
-    <div class="container-fluid p-0 position-relative">
-        <div class="image-container">
-            <img src="img/London_Eye_-_tunliweb.no.jpg" alt="Turismo" class="img-fluid rounded">
-        </div>
-        <!-- Text Content on the Right -->
-        <div class="text-container4 position-absolute">
+    <!-- Turismo Section -->
+    <section id="tourism-section" class="content-section py-5 bg-dark">
+      <div class="container-fluid bg-dark p-0">
+        <div class="row no-gutters" style="height: 70vh">
+          <div
+            class="col-lg-6 p-5 d-flex flex-column justify-content-center align-items-center"
+          >
             <h2>Turismo</h2>
-            <p>A Inglaterra é um destino turístico por excelência, com atrações famosas como o Big Ben, a Torre de Londres, Stonehenge e as cidades históricas de Bath e Oxford.</p>
-            <p>Além dos marcos icônicos, a Inglaterra oferece uma rica diversidade de paisagens naturais, de montanhas a praias, tornando-se um destino perfeito para qualquer tipo de viajante.</p>
+            <p>
+              A Inglaterra é um destino turístico por excelência, com atrações
+              famosas como o Big Ben, a Torre de Londres, Stonehenge e as
+              cidades históricas de Bath e Oxford.
+            </p>
+            <p>
+              Além dos marcos icônicos, a Inglaterra oferece uma rica
+              diversidade de paisagens naturais, de montanhas a praias,
+              tornando-se um destino perfeito para qualquer tipo de viajante.
+            </p>
             <a href="turismo.html" class="btn btn-primary">Leia Mais</a>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="img/London_Eye_-_tunliweb.no.jpg"
+              alt="Turismo"
+              class="img-fluid styled-frame"
+            />
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
+    <section id="culture-section" class="content-section py-5">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters" style="height: 70vh">
+          <div class="col-lg-6">
+            <img
+              src="img/Francis_Dodd_-_Dodd-98279_-_Whitehall_and_the_Palace_of_Westminster.jpg"
+              alt="Cultura"
+              class="img-fluid styled-frame"
+            />
+          </div>
+          <div
+            class="col-lg-6 p-5 d-flex flex-column justify-content-center align-items-center"
+          >
+            <h2>Cultura</h2>
+            <p>
+              A cultura inglesa é famosa por suas contribuições à literatura,
+              música, cinema e artes. Desde Shakespeare até a música pop
+              moderna, como os Beatles e Adele, a Inglaterra tem uma rica
+              tradição cultural.
+            </p>
+            <p>
+              Além disso, o país é conhecido por suas universidades de renome
+              mundial, como Oxford e Cambridge, que são centros de cultura e
+              conhecimento há séculos.
+            </p>
+            <a
+              href="cultura.html"
+              class="btn btn-primary"
+              style="
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+              "
+              >Leia Mais</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Curiosidades Section -->
+    <section id="curiosities-section" class="content-section py-5 bg-dark">
+      <div class="container-fluid bg-dark p-0">
+        <div class="row no-gutters" style="height: 70vh">
+          <div
+            class="col-lg-6 p-5 d-flex flex-column justify-content-center align-items-center"
+          >
+            <h2>Curiosidades</h2>
+            <p>
+              Você sabia que o primeiro telefone público do mundo foi instalado
+              em Londres em 1889? Criado pela The Telephone Company, ele marcou
+              o início de uma nova era na comunicação urbana.
+            </p>
+            <p>
+              Além disso, Londres também abriga o Big Ben, o maior relógio de
+              quatro faces do mundo, e foi palco da criação do sistema de metrô
+              mais antigo do planeta, inaugurado em 1863.
+            </p>
+            <a href="curiosidades.html" class="btn btn-primary">Leia Mais</a>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="img/Design sem nome (4).png"
+              alt="Curiosidades"
+              class="img-fluid styled-frame"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Inglaterra - Todos os direitos reservados</p>
+      <p>&copy; 2025 Inglaterra - Todos os direitos reservados</p>
     </footer>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Ajuste de rolagem suave para links com o href="#about"
+        document.querySelectorAll('a[href="#about"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault(); // Impede o comportamento padrão de rolagem
+
+            const target = document.querySelector("#about"); // Seção destino
+            const navbarHeight = document.querySelector(".navbar").offsetHeight; // Altura da navbar
+
+            // Rolagem suave para a seção #about, considerando a altura da navbar
+            window.scrollTo({
+              top: target.offsetTop - navbarHeight, // Ajuste a posição da rolagem
+              behavior: "smooth", // Rolagem suave
+            });
+          });
+        });
+      });
+    </script>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
-</body>
-
+  </body>
 </html>

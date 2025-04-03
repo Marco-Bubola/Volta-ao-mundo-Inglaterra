@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curiosidades da Inglaterra</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar (Transparent) -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top transparent-navbar"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="index.html"
+          style="font-size: 2.5rem; font-weight: 700"
+        >
+          <img
+            src="img/64px-Flag_of_the_United_Kingdom_(3-5).svg.png"
+            alt="bandeira inglaterra"
+          />
+          <span class="gradient-text">INGLATERRA</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="index.html"
+                style="font-size: 1.4rem; padding: 10px 15px"
+                ><span class="gradient-text">INICIO</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="historia.html"
+                style="font-size: 1.4rem; padding: 10px 15px"
+                ><span class="gradient-text">HISTÓRIA</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="cultura.html"
+                style="font-size: 1.4rem; padding: 10px 15px"
+                ><span class="gradient-text">CULTURA</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="turismo.html"
+                style="font-size: 1.4rem; padding: 10px 15px"
+                ><span class="gradient-text">TURISMO</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="curiosidades.html"
+                style="font-size: 1.4rem; padding: 10px 15px"
+                ><span class="gradient-text">CURIOSIDADES</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      window.onscroll = function () {
+        let navbar = document.querySelector(".navbar");
+
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      };
+    </script>
+    <script>
+      document.querySelectorAll(".gradient-text").forEach((span) => {
+        span.setAttribute("data-text", span.textContent);
+      });
+    </script>
+
+    <!-- Header Section with Background Image -->
+    <header
+      class="text-white text-center py-5"
+      style="
+        background: url('img/Inglaterra_1739983091702.jpg') no-repeat center
+          center/cover;
+        height: 50vh;
+        position: relative;
+      "
+    >
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.3);
+        "
+      ></div>
+      <!-- Gradient overlay -->
+      <div
+        class="container-fluid position-relative z-index-2"
+        style="position: absolute; top: 20%; left: 0; right: 0; bottom: 0"
+      >
+        <h1
+          class="display-4"
+          style="
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+          "
+        >
+          Curiosidades sobre a Inglaterra
+        </h1>
+        <p
+          class="lead"
+          style="
+            font-size: 1.5rem;
+            font-weight: 400;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+          "
+        >
+          Descubra alguns fatos fascinantes sobre a história, cultura e
+          curiosidades deste país incrível!
+        </p>
+      </div>
+    </header>
+
+    <!-- Curiosidade 1: O Primeiro Telefone Público -->
+    <section class="section bg-dark py-5" id="first-public-phone">
+      <div class="container-fluid">
+        <div class="row align-items-center" style="height: 50vh">
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+            style="height: 100%"
+          >
+            <div
+              class="section-image shadow-xl rounded transition-all hover:scale-105"
+              style="height: 100%; width: 100%; overflow: hidden"
+            >
+              <img
+                src="img/Cabine_Fotor.jpg"
+                alt="Primeiro Telefone Público"
+                class="img-fluid rounded transition-transform hover:opacity-80"
+                style="
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                "
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6 mt-4 mt-md-0">
+            <h2 class="section-title text-light mb-4 fade-in text-center">
+              O Primeiro Telefone Público
+            </h2>
+            <p class="section-text text-light mb-3 fade-in">
+              O primeiro telefone público foi instalado em Londres, em 1889, por
+              uma empresa chamada The Telephone Company. Ele foi instalado na
+              cidade para facilitar a comunicação em áreas públicas. Esse marco
+              histórico mudou a maneira como as pessoas se comunicavam e foi um
+              precursor da moderna telefonia pública.
+            </p>
+            <p class="section-text text-light mb-3 fade-in">
+              Hoje, embora os telefones públicos tenham se tornado obsoletos com
+              o advento dos celulares, eles ainda podem ser encontrados em
+              algumas áreas de Londres como peças históricas e turísticas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curiosidade 2: O Maior Relógio do Mundo -->
+    <section class="section bg-dark py-5" id="big-ben">
+      <div class="container-fluid">
+        <div class="row align-items-center" style="height: 50vh">
+          <div class="col-md-6 mt-4 mt-md-0">
+            <h2 class="section-title text-light mb-4 fade-in text-center">
+              O Maior Relógio do Mundo
+            </h2>
+            <p class="section-text text-light mb-3 fade-in">
+              O Big Ben, um dos marcos mais famosos de Londres e da Inglaterra,
+              não é apenas o maior relógio de quatro faces do mundo, mas também
+              um dos relógios mais icônicos. Cada face do relógio tem cerca de 7
+              metros de diâmetro, e o relógio funciona com uma precisão
+              impressionante.
+            </p>
+            <p class="section-text text-light mb-3 fade-in">
+              O Big Ben foi construído entre 1859 e 1864 e tem sido uma parte
+              importante da cidade desde então. Hoje, ele não é apenas um
+              relógio, mas um símbolo de Londres e um dos pontos turísticos mais
+              visitados do Reino Unido.
+            </p>
+          </div>
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+            style="height: 100%"
+          >
+            <div
+              class="section-image shadow-xl rounded transition-all hover:scale-105"
+              style="height: 100%; width: 100%; overflow: hidden"
+            >
+              <img
+                src="img/big-ben-1.jpg"
+                alt="Big Ben"
+                class="img-fluid rounded transition-transform hover:opacity-80"
+                style="
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curiosidade 3: O Sistema de Transporte Público Mais Antigo do Mundo -->
+    <section class="section bg-dark py-5" id="london-underground">
+      <div class="container-fluid">
+        <div class="row align-items-center" style="height: 50vh">
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+            style="height: 100%"
+          >
+            <div
+              class="section-image shadow-xl rounded transition-all hover:scale-105"
+              style="height: 100%; width: 100%; overflow: hidden"
+            >
+              <img
+                src="img/lancaster_gate_tube.jpg"
+                alt="London Underground"
+                class="img-fluid rounded transition-transform hover:opacity-80"
+                style="
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                "
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6 mt-4 mt-md-0">
+            <h2 class="section-title text-light mb-4 fade-in text-center">
+              O Sistema de Transporte Público Mais Antigo do Mundo
+            </h2>
+            <p class="section-text text-light mb-3 fade-in">
+              O **metrô de Londres**, ou **London Underground**, foi inaugurado
+              em 1863, tornando-se o primeiro sistema de transporte público
+              subterrâneo do mundo. Ele foi projetado para reduzir o tráfego nas
+              ruas congestionadas de Londres e proporcionar um meio rápido e
+              eficiente de transporte para a população.
+            </p>
+            <p class="section-text text-light mb-3 fade-in">
+              Atualmente, o metrô transporta milhões de passageiros por dia e
+              continua a ser uma das maiores redes de transporte subterrâneo do
+              mundo, com 270 estações espalhadas pela cidade.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Curiosidade 4: Cidades Subterrâneas -->
+    <section class="section bg-dark py-5" id="underground-cities">
+      <div class="container-fluid">
+        <div class="row align-items-center" style="height: 50vh">
+          <div class="col-md-6 mt-4 mt-md-0">
+            <h2 class="section-title text-light mb-4 fade-in text-center">
+              Cidades Subterrâneas na Inglaterra
+            </h2>
+            <p class="section-text text-light mb-3 fade-in">
+              Durante a Segunda Guerra Mundial, Londres desenvolveu uma vasta
+              rede de túneis subterrâneos para proteger os civis dos bombardeios
+              aéreos. Muitos desses túneis ainda existem e são abertos para
+              visitação guiada.
+            </p>
+            <p class="section-text text-light mb-3 fade-in">
+              Além de Londres, outras cidades como Bath e Dover também contam
+              com passagens subterrâneas históricas, algumas datando da Idade
+              Média. Esses locais têm sido usados como rotas de fuga, abrigos
+              secretos e hoje servem como atrações turísticas.
+            </p>
+          </div>
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+            style="height: 100%"
+          >
+            <div
+              class="section-image shadow-xl rounded transition-all hover:scale-105"
+              style="height: 100%; width: 100%; overflow: hidden"
+            >
+              <img
+                src="img/cavernas-subterraneas-castle-rock-nottingham-inglaterra-reino-unido_931448-209.avif"
+                alt="Cidades Subterrâneas"
+                class="img-fluid rounded transition-transform hover:opacity-80"
+                style="
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curiosidade 5: A Origem do "Tea Time" -->
+    <section class="section bg-dark py-5" id="tea-time">
+      <div class="container-fluid">
+        <div class="row align-items-center" style="height: 50vh">
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+            style="height: 100%"
+          >
+            <div
+              class="section-image shadow-xl rounded transition-all hover:scale-105"
+              style="height: 100%; width: 100%; overflow: hidden"
+            >
+              <img
+                src="img/shutterstock_269459780-_1_.jpg.webp"
+                alt="Tea Time"
+                class="img-fluid rounded transition-transform hover:opacity-80"
+                style="
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                "
+              />
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <h2 class="section-title text-light mb-4 fade-in text-center">
+              A Origem do "Tea Time" Inglês
+            </h2>
+            <p class="section-text text-light mb-3 fade-in">
+              O famoso "afternoon tea" surgiu no século XIX com a duquesa Anna
+              de Bedford, que instituiu o costume de tomar chá com bolos e
+              pãezinhos ao final da tarde para combater a fome antes do jantar.
+              A tradição rapidamente se espalhou entre a aristocracia inglesa.
+            </p>
+            <p class="section-text text-light mb-3 fade-in">
+              Hoje, o "tea time" é um ritual cultural britânico muito
+              valorizado, praticado em casas de chá tradicionais e até mesmo em
+              casas comuns, com serviço de porcelana fina e acompanhamento de
+              geleias, manteiga e scones.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curiosidade 6: Rainhas que nunca casaram -->
+    <section class="section bg-dark py-5" id="single-queens">
+      <div class="container-fluid">
+        <div class="row align-items-center" style="height: 60vh">
+          <div class="col-md-6 mt-4 mt-md-0">
+            <h2 class="section-title text-light mb-4 fade-in text-center">
+              Rainhas que Nunca se Casaram
+            </h2>
+            <p class="section-text text-light mb-3 fade-in">
+              A Rainha Elizabeth I é uma das monarcas mais conhecidas por nunca
+              ter se casado. Ela ficou conhecida como a "Rainha Virgem" e
+              dedicou sua vida ao trono e à estabilidade do Reino.
+            </p>
+            <p class="section-text text-light mb-3 fade-in">
+              Muitos historiadores acreditam que sua escolha por não casar foi
+              estratégica, para manter o poder absoluto nas mãos da coroa e
+              evitar alianças que pudessem prejudicar o Reino. Seu reinado foi
+              um dos mais prósperos da história inglesa.
+            </p>
+          </div>
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+            style="height: 100%"
+          >
+            <div
+              class="section-image shadow-xl rounded transition-all hover:scale-105"
+              style="height: 100%; width: 100%; overflow: hidden"
+            >
+              <img
+                src="img/_126748947_gettyimages-544275624-1.jpg.webp"
+                alt="Elizabeth I"
+                class="img-fluid rounded transition-transform hover:opacity-80"
+                style="
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                  object-position: 50% 20%;
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>
+        &copy; 2025 Curiosidades da Inglaterra - Todos os direitos reservados
+      </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

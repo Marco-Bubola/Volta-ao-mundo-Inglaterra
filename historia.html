@@ -1,292 +1,599 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>História da Inglaterra</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-  
-</head>
-<body>
-<!-- Navbar (Transparent) -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top transparent-navbar">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html" style="font-size: 2.5rem; font-weight: 700;">
-            <span class="gradient-text">INGLATERRA</span>
-          </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar (Transparent) -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top transparent-navbar"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="index.html"
+          style="font-size: 2.5rem; font-weight: 700"
+        >
+          <img
+            src="img/64px-Flag_of_the_United_Kingdom_(3-5).svg.png"
+            alt="bandeira inglaterra"
+          />
+          <span class="gradient-text">INGLATERRA</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html" style="font-size: 1.4rem; padding: 10px 15px;"><span class="gradient-text">INICIO</span></a>
-                </li>
-             
-                <li class="nav-item">
-                    <a class="nav-link" href="historia.html" style="font-size: 1.4rem; padding: 10px 15px;"><span class="gradient-text">HISTÓRIA</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cultura.html" style="font-size: 1.4rem; padding: 10px 15px;"><span class="gradient-text">CULTURA</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="turismo.html" style="font-size: 1.4rem; padding: 10px 15px;"><span class="gradient-text">TURISMO</span></a>
-                </li>
-            </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="index.html"
+                style="font-size: 1.4rem; padding: 10px 15px"
+                ><span class="gradient-text">INICIO</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="historia.html"
+                style="font-size: 1.4rem; padding: 10px 15px"
+                ><span class="gradient-text">HISTÓRIA</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="cultura.html"
+                style="font-size: 1.4rem; padding: 10px 15px"
+                ><span class="gradient-text">CULTURA</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="turismo.html"
+                style="font-size: 1.4rem; padding: 10px 15px"
+                ><span class="gradient-text">TURISMO</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="curiosidades.html"
+                style="font-size: 1.4rem; padding: 10px 15px"
+                ><span class="gradient-text">CURIOSIDADES</span></a
+              >
+            </li>
+          </ul>
         </div>
-    </div>
-</nav>
-<script>
-    // Detecta o evento de rolagem
-    window.onscroll = function() {
-        let navbar = document.querySelector('.navbar');
-        
+      </div>
+    </nav>
+    <script>
+      // Detecta o evento de rolagem
+      window.onscroll = function () {
+        let navbar = document.querySelector(".navbar");
+
         // Verifica a posição de rolagem
-        if (window.scrollY > 50) { // Se o usuário rolou mais de 50px
-            navbar.classList.add('scrolled'); // Adiciona a classe scrolled
+        if (window.scrollY > 50) {
+          // Se o usuário rolou mais de 50px
+          navbar.classList.add("scrolled"); // Adiciona a classe scrolled
         } else {
-            navbar.classList.remove('scrolled'); // Remove a classe scrolled quando voltar ao topo
+          navbar.classList.remove("scrolled"); // Remove a classe scrolled quando voltar ao topo
         }
-    };
-</script>
-<script>
-    document.querySelectorAll('.gradient-text').forEach(span => {
-      span.setAttribute('data-text', span.textContent);
-    });
-  </script>
+      };
+    </script>
+    <script>
+      document.querySelectorAll(".gradient-text").forEach((span) => {
+        span.setAttribute("data-text", span.textContent);
+      });
+    </script>
 
-<!-- Header Section with Background Image -->
-<header class="text-white text-center py-5" style="background: url('img/Imagem8.png') no-repeat center center/cover; height: 50vh; position: relative;">
-    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.3);"></div> <!-- Gradient overlay -->
-    <div class="container-fluid position-relative z-index-2" style="position: absolute; top: 20%; left: 0; right: 0; bottom: 0;">
-        <h1 class="display-4" style="font-size: 3.5rem; font-weight: 700; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">História da Inglaterra</h1>
-        <p class="lead" style="font-size: 1.5rem; font-weight: 400; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);">Uma jornada pela história de um país de grandes conquistas, reis, rainhas e transformações profundas.</p>
-    </div>
-</header>
+    <!-- Header Section with Background Image -->
+    <header
+      class="text-white text-center py-5"
+      style="
+        background: url('img/Imagem8.png') no-repeat center center/cover;
+        height: 50vh;
+        position: relative;
+      "
+    >
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.3);
+        "
+      ></div>
+      <!-- Gradient overlay -->
+      <div
+        class="container-fluid position-relative z-index-2"
+        style="position: absolute; top: 20%; left: 0; right: 0; bottom: 0"
+      >
+        <h1
+          class="display-4"
+          style="
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+          "
+        >
+          História da Inglaterra
+        </h1>
+        <p
+          class="lead"
+          style="
+            font-size: 1.5rem;
+            font-weight: 400;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+          "
+        >
+          Uma jornada pela história de um país de grandes conquistas, reis,
+          rainhas e transformações profundas.
+        </p>
+      </div>
+    </header>
 
-<section class="section bg-dark py-5" id="medieval">
-    <div class="container-fluid">
-        <div class="row align-items-center" style="height: 95vh;">
-       
-<div class="col-md-6 d-flex justify-content-center align-items-center" style="height: 100%;">
-    <div class="section-image shadow-xl rounded transition-all hover:scale-105" style="height: 100%; width: 100%; overflow: hidden;">
-        <img src="img/1e5d231b0bbf959df7c445d29955164aa231a2fa_hq.jpg" alt="Idade Média na Inglaterra" class="img-fluid rounded transition-transform hover:opacity-80" style="object-fit: cover; width: 100%; height: 100%; display: block; object-position:  50% 40% ;">
-    </div>
-</div>
-            <!-- Text on the right -->
-            <div class="col-md-6 mt-4 mt-md-0">
-                <h2 class="section-title text-light mb-4 fade-in text-center">A Idade Média na Inglaterra</h2>
-                <p class="section-text text-light mb-3 fade-in">
-                    A Idade Média da Inglaterra é marcada pela luta pelo poder, pela Igreja e pela formação da identidade nacional. O período começou com a conquista normanda, em 1066, e seguiu com eventos como a assinatura da Magna Carta e a Guerra das Rosas. Ao longo de aproximadamente 1000 anos, a Inglaterra passou por grandes transformações sociais, políticas e religiosas.
-                </p>
-
-
-                <h3 class="text-light mb-3 fade-in">A Guerra das Rosas (1455-1487)</h3>
-                <p class="section-text text-light mb-3 fade-in">
-                    A Guerra das Rosas foi uma série de conflitos dinásticos entre as casas de Lancaster e York, duas facções da nobreza inglesa. O conflito começou em 1455 e durou até 1487, quando Henrique VII, da casa de Lancaster, se tornou rei e unificou as casas rivais através do casamento com Elizabeth de York. Essa guerra teve um impacto profundo na política e na sociedade inglesa, com várias casas e linhagens sendo destruídas ou desfeitas.
-                </p>
-
-                <h3 class="text-light mb-3 fade-in">A Peste Negra (1347-1351)</h3>
-                <p class="section-text text-light mb-3 fade-in">
-                    A Peste Negra foi uma das pandemias mais devastadoras da história, afetando a Inglaterra e outros países europeus entre 1347 e 1351. Estima-se que cerca de um terço da população inglesa morreu devido à doença, o que causou grandes mudanças sociais e econômicas. A escassez de mão de obra levou a uma maior valorização dos trabalhadores e a transformações nas relações sociais e de poder na sociedade medieval.
-                </p>
-
-                <h3 class="text-light mb-3 fade-in">O Papel da Igreja na Idade Média</h3>
-                <p class="section-text text-light fade-in">
-                    A Igreja Católica teve um papel dominante na vida cotidiana durante a Idade Média. Além de ser uma força espiritual, a Igreja também exercia grande influência política e econômica. As catedrais e mosteiros eram centros de poder, e o Papa tinha mais influência do que o próprio monarca em muitos casos. Esse domínio religioso foi contestado em várias ocasiões, como na Revolta dos Camponeses de 1381 e nas disputas entre o Papa e os reis da Inglaterra.
-                </p>
+    <section class="section bg-dark py-5" id="medieval">
+      <div class="container-fluid">
+        <div class="row align-items-center" style="height: 105vh">
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+            style="height: 100%"
+          >
+            <div
+              class="section-image shadow-xl rounded transition-all hover:scale-105"
+              style="height: 100%; width: 100%; overflow: hidden"
+            >
+              <img
+                src="img/1e5d231b0bbf959df7c445d29955164aa231a2fa_hq.jpg"
+                alt="Idade Média na Inglaterra"
+                class="img-fluid rounded transition-transform hover:opacity-80"
+                style="
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                  object-position: 50% 40%;
+                "
+              />
             </div>
+          </div>
+          <!-- Text on the right -->
+          <div class="col-md-6 mt-4 mt-md-0">
+            <h2 class="section-title text-light mb-4 fade-in text-center">
+              A Idade Média na Inglaterra
+            </h2>
+            <p class="section-text text-light mb-3 fade-in">
+              A Idade Média da Inglaterra é marcada pela luta pelo poder, pela
+              Igreja e pela formação da identidade nacional. O período começou
+              com a conquista normanda, em 1066, e seguiu com eventos como a
+              assinatura da Magna Carta e a Guerra das Rosas. Ao longo de
+              aproximadamente 1000 anos, a Inglaterra passou por grandes
+              transformações sociais, políticas e religiosas.
+            </p>
+
+            <h3 class="text-light mb-3 fade-in">
+              A Guerra das Rosas (1455-1487)
+            </h3>
+            <p class="section-text text-light mb-3 fade-in">
+              A Guerra das Rosas foi uma série de conflitos dinásticos entre as
+              casas de Lancaster e York, duas facções da nobreza inglesa. O
+              conflito começou em 1455 e durou até 1487, quando Henrique VII, da
+              casa de Lancaster, se tornou rei e unificou as casas rivais
+              através do casamento com Elizabeth de York. Essa guerra teve um
+              impacto profundo na política e na sociedade inglesa, com várias
+              casas e linhagens sendo destruídas ou desfeitas.
+            </p>
+
+            <h3 class="text-light mb-3 fade-in">A Peste Negra (1347-1351)</h3>
+            <p class="section-text text-light mb-3 fade-in">
+              A Peste Negra foi uma das pandemias mais devastadoras da história,
+              afetando a Inglaterra e outros países europeus entre 1347 e 1351.
+              Estima-se que cerca de um terço da população inglesa morreu devido
+              à doença, o que causou grandes mudanças sociais e econômicas. A
+              escassez de mão de obra levou a uma maior valorização dos
+              trabalhadores e a transformações nas relações sociais e de poder
+              na sociedade medieval.
+            </p>
+
+            <h3 class="text-light mb-3 fade-in">
+              O Papel da Igreja na Idade Média
+            </h3>
+            <p class="section-text text-light fade-in">
+              A Igreja Católica teve um papel dominante na vida cotidiana
+              durante a Idade Média. Além de ser uma força espiritual, a Igreja
+              também exercia grande influência política e econômica. As
+              catedrais e mosteiros eram centros de poder, e o Papa tinha mais
+              influência do que o próprio monarca em muitos casos. Esse domínio
+              religioso foi contestado em várias ocasiões, como na Revolta dos
+              Camponeses de 1381 e nas disputas entre o Papa e os reis da
+              Inglaterra.
+            </p>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- Section: Idade Moderna -->
-<section class="section bg-dark py-5" id="early-modern">
-    <div class="container-fluid">
-        <div class="row align-items-center" style="height: 90vh;">
-           
-            <div class="col-md-6 mt-4 mt-md-0">
-                <h2 class="section-title text-light mb-4 fade-in text-center">A Idade Moderna</h2>
-                <p class="section-text text-light mb-3 fade-in">
-                    A Idade Moderna foi um período de grandes transformações para a Inglaterra, incluindo o surgimento do absolutismo, a Reforma Anglicana, a Revolução Industrial e o apogeu do Império Britânico.
-                </p>
+    <!-- Section: Idade Moderna -->
+    <section class="section bg-dark py-5" id="early-modern">
+      <div class="container-fluid">
+        <div class="row align-items-center" style="height: 120vh">
+          <div class="col-md-6 mt-4 mt-md-0">
+            <h2 class="section-title text-light mb-4 fade-in text-center">
+              A Idade Moderna
+            </h2>
+            <p class="section-text text-light mb-3 fade-in">
+              A Idade Moderna foi um período de grandes transformações para a
+              Inglaterra, incluindo o surgimento do absolutismo, a Reforma
+              Anglicana, a Revolução Industrial e o apogeu do Império Britânico.
+            </p>
 
-                <h3 class="text-light mb-3 fade-in">Reforma Anglicana (1534)</h3>
-                <p class="section-text text-light mb-3 fade-in">
-                    Em 1534, o rei Henrique VIII rompeu com a Igreja Católica Romana e fundou a Igreja da Inglaterra, dando início à Reforma Anglicana. A política religiosa da Inglaterra mudou drasticamente e isso teve profundas implicações para a sociedade, a política e as relações internacionais.
-                </p>
+            <h3 class="text-light mb-3 fade-in">Reforma Anglicana (1534)</h3>
+            <p class="section-text text-light mb-3 fade-in">
+              Em 1534, o rei Henrique VIII rompeu com a Igreja Católica Romana e
+              fundou a Igreja da Inglaterra, dando início à Reforma Anglicana. A
+              política religiosa da Inglaterra mudou drasticamente e isso teve
+              profundas implicações para a sociedade, a política e as relações
+              internacionais.
+            </p>
 
-                <h3 class="text-light mb-3 fade-in">Revolução Industrial (Século XIX)</h3>
-                <p class="section-text text-light fade-in">
-                    A Revolução Industrial transformou a Inglaterra de uma sociedade agrária para uma sociedade industrializada e urbana. As inovações tecnológicas e a expansão da manufatura causaram um crescimento econômico significativo, mas também resultaram em condições de trabalho duras para os trabalhadores nas fábricas.
-                </p>
+            <h3 class="text-light mb-3 fade-in">
+              Revolução Industrial (Século XIX)
+            </h3>
+            <p class="section-text text-light fade-in">
+              A Revolução Industrial transformou a Inglaterra de uma sociedade
+              agrária para uma sociedade industrializada e urbana. As inovações
+              tecnológicas e a expansão da manufatura causaram um crescimento
+              econômico significativo, mas também resultaram em condições de
+              trabalho duras para os trabalhadores nas fábricas.
+            </p>
 
-                <h3 class="text-light mb-3 fade-in">Queda de Constantinopla (1453)</h3>
-                <p class="section-text text-light mb-3 fade-in">
-                    A Queda de Constantinopla em 1453 foi um dos eventos mais significativos da Idade Moderna. O Império Bizantino, com sua capital em Constantinopla (atual Istambul), caiu para o Império Otomano, liderado por Maomé II. Este evento teve implicações profundas para a Europa e para o mundo, incluindo a mudança nas rotas comerciais que conectavam o Ocidente à Ásia. 
-                </p>
+            <h3 class="text-light mb-3 fade-in">
+              Queda de Constantinopla (1453)
+            </h3>
+            <p class="section-text text-light mb-3 fade-in">
+              A Queda de Constantinopla em 1453 foi um dos eventos mais
+              significativos da Idade Moderna. O Império Bizantino, com sua
+              capital em Constantinopla (atual Istambul), caiu para o Império
+              Otomano, liderado por Maomé II. Este evento teve implicações
+              profundas para a Europa e para o mundo, incluindo a mudança nas
+              rotas comerciais que conectavam o Ocidente à Ásia.
+            </p>
 
-                <p class="section-text text-light mb-3 fade-in">
-                    A perda da cidade de Constantinopla também abriu caminho para a expansão do Império Otomano na Europa, influenciando a política e as relações internacionais nas décadas seguintes. Além disso, o fechamento das rotas comerciais tradicionais levou os exploradores europeus, como Cristóvão Colombo, a buscar novas rotas para o Oriente, o que acabou por levar à descoberta das Américas em 1492.
-                </p>
+            <p class="section-text text-light mb-3 fade-in">
+              A perda da cidade de Constantinopla também abriu caminho para a
+              expansão do Império Otomano na Europa, influenciando a política e
+              as relações internacionais nas décadas seguintes. Além disso, o
+              fechamento das rotas comerciais tradicionais levou os exploradores
+              europeus, como Cristóvão Colombo, a buscar novas rotas para o
+              Oriente, o que acabou por levar à descoberta das Américas em 1492.
+            </p>
+          </div>
+
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+          >
+            <div
+              class="section-image shadow-xl rounded transition-all hover:scale-105"
+              style="height: auto; width: 100%; overflow: hidden"
+            >
+              <img
+                src="img/6634C.jpg"
+                alt="Idade Moderna na Inglaterra"
+                class="img-fluid rounded transition-transform hover:opacity-80"
+                style="
+                  object-fit: cover;
+                  width: 100%;
+                  height: auto;
+                  max-height: 100%;
+                  display: block;
+                "
+              />
+              <img
+                src="img/representacao-da-queda-de-constantinopla-o-marco-inicial-da-idade-moderna.webp"
+                alt="Idade Moderna na Inglaterra"
+                class="img-fluid rounded transition-transform hover:opacity-80"
+                style="
+                  object-fit: cover;
+                  width: 100%;
+                  height: auto;
+                  max-height: 100%;
+                  display: block;
+                "
+              />
             </div>
-            <div class="col-md-6 d-flex justify-content-center align-items-center" style="height: 100%;">
-                <div class="section-image shadow-xl rounded transition-all hover:scale-105" style="height: 100%; width: 100%; overflow: hidden;">
-                    <img src="img/representacao-da-queda-de-constantinopla-o-marco-inicial-da-idade-moderna.webp" alt="Idade Moderna na Inglaterra" class="img-fluid rounded transition-transform hover:opacity-80" style="object-fit: cover; width: 100%; height: 100%; display: block;">
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-
-<!-- Section: Linha do Tempo -->
-<section class="section bg-dark py-5" id="timeline">
-    <div class="container-fluid">
-        <h2 class="section-title text-light mb-4">Linha do Tempo da História da Inglaterra</h2>
+    <!-- Section: Linha do Tempo -->
+    <section class="section bg-dark py-5" id="timeline">
+      <div class="container-fluid">
+        <h2 class="section-title text-light mb-4">
+          Linha do Tempo da História da Inglaterra
+        </h2>
         <div class="timeline-container">
-            <div class="row">
-                <!-- Card 1 -->
-                <div class="col-md-3 mb-4">
-                    <div class="card bg-dark text-white">
-                        <div class="card-body">
-                            <h5 class="card-title text-light">1066 - Conquista Normanda</h5>
-                            <p class="card-text">Guilherme, o Conquistador, vence Harold II na Batalha de Hastings e conquista a Inglaterra.</p>
-                            <p class="card-text">Este evento marca a introdução da cultura normanda na Inglaterra, com impactos profundos na língua, sistema legal e feudalismo do país.</p>
-                        </div>
-                    </div>
+          <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-3 mb-4">
+              <div class="card bg-dark text-white">
+                <div class="card-body">
+                  <h5 class="card-title text-light">
+                    1066 - Conquista Normanda
+                  </h5>
+                  <p class="card-text">
+                    Guilherme, o Conquistador, vence Harold II na Batalha de
+                    Hastings e conquista a Inglaterra.
+                  </p>
+                  <p class="card-text">
+                    Este evento marca a introdução da cultura normanda na
+                    Inglaterra, com impactos profundos na língua, sistema legal
+                    e feudalismo do país.
+                  </p>
                 </div>
-
-                <!-- Card 2 -->
-                <div class="col-md-3 mb-4">
-                    <div class="card bg-dark text-white">
-                        <div class="card-body">
-                            <h5 class="card-title text-light">1215 - Magna Carta</h5>
-                            <p class="card-text">Rei João Sem Terra assina o documento que limita o poder da monarquia, um marco da luta contra a tirania.</p>
-                            <p class="card-text">A Magna Carta estabeleceu os direitos de livre comércio, a proteção de propriedades e a justiça para todos, limitando os abusos do poder monárquico.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col-md-3 mb-4">
-                    <div class="card bg-dark text-white">
-                        <div class="card-body">
-                            <h5 class="card-title text-light">1534 - Reforma Anglicana</h5>
-                            <p class="card-text">Henrique VIII rompe com a Igreja Católica e funda a Igreja da Inglaterra, alterando profundamente a política religiosa.</p>
-                            <p class="card-text">A Reforma Anglicana foi impulsionada pela necessidade de Henrique VIII de anular seu casamento e garantir a sucessão real. Isso teve efeitos duradouros na relação da Inglaterra com o papado e com a religião.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col-md-3 mb-4">
-                    <div class="card bg-dark text-white">
-                        <div class="card-body">
-                            <h5 class="card-title text-light">1588 - Derrota da Armada Espanhola</h5>
-                            <p class="card-text">A vitória da Inglaterra sobre a Armada Espanhola solidifica o domínio naval do país e a sua posição como potência mundial.</p>
-                            <p class="card-text">Esta vitória foi crucial para a segurança do reino, consolidando a reputação da marinha britânica e iniciando a era do império britânico.</p>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
 
-            <div class="row">
-                <!-- Card 5 -->
-                <div class="col-md-3 mb-4">
-                    <div class="card bg-dark text-white">
-                        <div class="card-body">
-                            <h5 class="card-title text-light">1688 - Revolução Gloriosa</h5>
-                            <p class="card-text">A ascensão de Guilherme III e Maria II estabelece a monarquia constitucional na Inglaterra.</p>
-                            <p class="card-text">A Revolução Gloriosa foi um marco na história política britânica, estabelecendo o controle parlamentar sobre a monarquia e evitando uma guerra civil.</p>
-                        </div>
-                    </div>
+            <!-- Card 2 -->
+            <div class="col-md-3 mb-4">
+              <div class="card bg-dark text-white">
+                <div class="card-body">
+                  <h5 class="card-title text-light">1215 - Magna Carta</h5>
+                  <p class="card-text">
+                    Rei João Sem Terra assina o documento que limita o poder da
+                    monarquia, um marco da luta contra a tirania.
+                  </p>
+                  <p class="card-text">
+                    A Magna Carta estabeleceu os direitos de livre comércio, a
+                    proteção de propriedades e a justiça para todos, limitando
+                    os abusos do poder monárquico.
+                  </p>
                 </div>
-
-                <!-- Card 6 -->
-                <div class="col-md-3 mb-4">
-                    <div class="card bg-dark text-white">
-                        <div class="card-body">
-                            <h5 class="card-title text-light">1837-1901 - Era Vitoriana</h5>
-                            <p class="card-text">O Império Britânico atinge seu auge sob o reinado da Rainha Vitória, sendo uma das maiores potências globais.</p>
-                            <p class="card-text">Durante a Era Vitoriana, a Inglaterra viveu grandes mudanças sociais e econômicas, além de expandir seu império para a maior parte do globo.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 7 -->
-                <div class="col-md-3 mb-4">
-                    <div class="card bg-dark text-white">
-                        <div class="card-body">
-                            <h5 class="card-title text-light">1914-1918 - Primeira Guerra Mundial</h5>
-                            <p class="card-text">A Inglaterra, como parte da Grã-Bretanha, se envolve na Primeira Guerra Mundial, enfrentando enormes desafios e perdas.</p>
-                            <p class="card-text">A guerra teve um impacto profundo no país, com grandes mudanças políticas, sociais e econômicas, além da perda de milhões de vidas.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 8 -->
-                <div class="col-md-3 mb-4">
-                    <div class="card bg-dark text-white">
-                        <div class="card-body">
-                            <h5 class="card-title text-light">1939-1945 - Segunda Guerra Mundial</h5>
-                            <p class="card-text">A Inglaterra desempenha um papel crucial na luta contra o regime nazista, sendo um dos principais aliados na derrota de Hitler.</p>
-                            <p class="card-text">O envolvimento da Inglaterra na Segunda Guerra Mundial foi um ponto de virada para o país, que enfrentou grandes desafios tanto no front quanto na retaguarda.</p>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-3 mb-4">
+              <div class="card bg-dark text-white">
+                <div class="card-body">
+                  <h5 class="card-title text-light">
+                    1534 - Reforma Anglicana
+                  </h5>
+                  <p class="card-text">
+                    Henrique VIII rompe com a Igreja Católica e funda a Igreja
+                    da Inglaterra, alterando profundamente a política religiosa.
+                  </p>
+                  <p class="card-text">
+                    A Reforma Anglicana foi impulsionada pela necessidade de
+                    Henrique VIII de anular seu casamento e garantir a sucessão
+                    real. Isso teve efeitos duradouros na relação da Inglaterra
+                    com o papado e com a religião.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-3 mb-4">
+              <div class="card bg-dark text-white">
+                <div class="card-body">
+                  <h5 class="card-title text-light">
+                    1588 - Derrota da Armada Espanhola
+                  </h5>
+                  <p class="card-text">
+                    A vitória da Inglaterra sobre a Armada Espanhola solidifica
+                    o domínio naval do país e a sua posição como potência
+                    mundial.
+                  </p>
+                  <p class="card-text">
+                    Esta vitória foi crucial para a segurança do reino,
+                    consolidando a reputação da marinha britânica e iniciando a
+                    era do império britânico.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Card 5 -->
+            <div class="col-md-3 mb-4">
+              <div class="card bg-dark text-white">
+                <div class="card-body">
+                  <h5 class="card-title text-light">
+                    1688 - Revolução Gloriosa
+                  </h5>
+                  <p class="card-text">
+                    A ascensão de Guilherme III e Maria II estabelece a
+                    monarquia constitucional na Inglaterra.
+                  </p>
+                  <p class="card-text">
+                    A Revolução Gloriosa foi um marco na história política
+                    britânica, estabelecendo o controle parlamentar sobre a
+                    monarquia e evitando uma guerra civil.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-3 mb-4">
+              <div class="card bg-dark text-white">
+                <div class="card-body">
+                  <h5 class="card-title text-light">
+                    1837-1901 - Era Vitoriana
+                  </h5>
+                  <p class="card-text">
+                    O Império Britânico atinge seu auge sob o reinado da Rainha
+                    Vitória, sendo uma das maiores potências globais.
+                  </p>
+                  <p class="card-text">
+                    Durante a Era Vitoriana, a Inglaterra viveu grandes mudanças
+                    sociais e econômicas, além de expandir seu império para a
+                    maior parte do globo.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-3 mb-4">
+              <div class="card bg-dark text-white">
+                <div class="card-body">
+                  <h5 class="card-title text-light">
+                    1914-1918 - Primeira Guerra Mundial
+                  </h5>
+                  <p class="card-text">
+                    A Inglaterra, como parte da Grã-Bretanha, se envolve na
+                    Primeira Guerra Mundial, enfrentando enormes desafios e
+                    perdas.
+                  </p>
+                  <p class="card-text">
+                    A guerra teve um impacto profundo no país, com grandes
+                    mudanças políticas, sociais e econômicas, além da perda de
+                    milhões de vidas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col-md-3 mb-4">
+              <div class="card bg-dark text-white">
+                <div class="card-body">
+                  <h5 class="card-title text-light">
+                    1939-1945 - Segunda Guerra Mundial
+                  </h5>
+                  <p class="card-text">
+                    A Inglaterra desempenha um papel crucial na luta contra o
+                    regime nazista, sendo um dos principais aliados na derrota
+                    de Hitler.
+                  </p>
+                  <p class="card-text">
+                    O envolvimento da Inglaterra na Segunda Guerra Mundial foi
+                    um ponto de virada para o país, que enfrentou grandes
+                    desafios tanto no front quanto na retaguarda.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- Section: A Monarquia Inglesa -->
-<section class="section bg-dark py-5" id="monarchy">
-    <div class="container-fluid">
-        <div class="row align-items-center" style="height: 100vh;">
-            <!-- Image on the left -->
-            <div class="col-md-6 d-flex justify-content-center align-items-center" style="height: 100%;">
-                <div class="section-image shadow-xl rounded transition-all hover:scale-105" style="height: 100%; width: 100%; overflow: hidden;">
-                    <img src="img/elizabeth-II.jpg" alt="Monarquia Inglesa" class="img-fluid rounded transition-transform hover:opacity-80" style="object-fit: cover; width: 100%; height: 100%; display: block; object-position: 50% 20%;">
-                </div>
+    <!-- Section: A Monarquia Inglesa -->
+    <section class="section bg-dark py-5" id="monarchy">
+      <div class="container-fluid">
+        <div class="row align-items-center" style="height: 120vh">
+          <!-- Image on the left -->
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+            style="height: 100%"
+          >
+            <div
+              class="section-image shadow-xl rounded transition-all hover:scale-105"
+              style="height: 100%; width: 100%; overflow: hidden"
+            >
+              <img
+                src="img/elizabeth-II.jpg"
+                alt="Monarquia Inglesa"
+                class="img-fluid rounded transition-transform hover:opacity-80"
+                style="
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                  object-position: 50% 20%;
+                "
+              />
             </div>
+          </div>
 
-            <!-- Text on the right -->
-            <div class="col-md-6 mt-4 mt-md-0">
-                <h2 class="section-title text-light mb-4 fade-in text-center">A Monarquia Inglesa</h2>
-                <p class="section-text text-light mb-3 fade-in">
-                    A monarquia inglesa é uma das mais antigas do mundo. Sua história remonta a centenas de anos, com várias dinastias influentes, incluindo os Plantagenetas, Tudor, Stuart e a atual Casa de Windsor. O impacto da monarquia na política e na cultura inglesa foi profundo, com eventos como a assinatura da Magna Carta e a ascensão de monarcas como Henrique VIII e Elizabeth I.
-                </p>
+          <!-- Text on the right -->
+          <div class="col-md-6 mt-4 mt-md-0">
+            <h2 class="section-title text-light mb-4 fade-in text-center">
+              A Monarquia Inglesa
+            </h2>
+            <p class="section-text text-light mb-3 fade-in">
+              A monarquia inglesa é uma das mais antigas do mundo. Sua história
+              remonta a centenas de anos, com várias dinastias influentes,
+              incluindo os Plantagenetas, Tudor, Stuart e a atual Casa de
+              Windsor. O impacto da monarquia na política e na cultura inglesa
+              foi profundo, com eventos como a assinatura da Magna Carta e a
+              ascensão de monarcas como Henrique VIII e Elizabeth I.
+            </p>
 
-             
-                <h3 class="text-light mb-3 fade-in">A Rainha Elizabeth I</h3>
-                <p class="section-text text-light mb-3 fade-in">
-                    Elizabeth I, filha de Henrique VIII e sua segunda esposa, Ana Bolena, foi uma das monarcas mais emblemáticas da Inglaterra. Seu reinado, conhecido como a "Era Elisabetana", foi marcado por uma recuperação da estabilidade política e econômica após o reinado turbulento de sua irmã, Maria I. Elizabeth I é lembrada por ter fortalecido o Império Britânico, pela vitória contra a Armada Espanhola em 1588, e pelo florescimento das artes, especialmente a literatura e o teatro, com figuras como William Shakespeare.
-                </p>
+            <h3 class="text-light mb-3 fade-in">A Rainha Elizabeth I</h3>
+            <p class="section-text text-light mb-3 fade-in">
+              Elizabeth I, filha de Henrique VIII e sua segunda esposa, Ana
+              Bolena, foi uma das monarcas mais emblemáticas da Inglaterra. Seu
+              reinado, conhecido como a "Era Elisabetana", foi marcado por uma
+              recuperação da estabilidade política e econômica após o reinado
+              turbulento de sua irmã, Maria I. Elizabeth I é lembrada por ter
+              fortalecido o Império Britânico, pela vitória contra a Armada
+              Espanhola em 1588, e pelo florescimento das artes, especialmente a
+              literatura e o teatro, com figuras como William Shakespeare.
+            </p>
 
-                <h3 class="text-light mb-3 fade-in">A Rainha Elizabeth II</h3>
-                <p class="section-text text-light mb-3 fade-in">
-                    A Rainha Elizabeth II, a monarca mais longeva da história britânica, ascendeu ao trono em 1952, após a morte de seu pai, George VI. Ao longo de seu reinado, ela testemunhou profundas mudanças sociais, culturais e políticas, tanto dentro da Inglaterra quanto no mundo. Elizabeth II teve um papel importante em modernizar a monarquia e em preservar a instituição em tempos de desafios, incluindo a descolonização, a adesão e a saída do Reino Unido da União Europeia (Brexit). Sua presença constante e seu compromisso com a história e a tradição tornaram-na uma figura unificadora e amplamente respeitada no Reino Unido e no mundo.
-                </p>
+            <h3 class="text-light mb-3 fade-in">A Rainha Elizabeth II</h3>
+            <p class="section-text text-light mb-3 fade-in">
+              A Rainha Elizabeth II, a monarca mais longeva da história
+              britânica, ascendeu ao trono em 1952, após a morte de seu pai,
+              George VI. Ao longo de seu reinado, ela testemunhou profundas
+              mudanças sociais, culturais e políticas, tanto dentro da
+              Inglaterra quanto no mundo. Elizabeth II teve um papel importante
+              em modernizar a monarquia e em preservar a instituição em tempos
+              de desafios, incluindo a descolonização, a adesão e a saída do
+              Reino Unido da União Europeia (Brexit). Sua presença constante e
+              seu compromisso com a história e a tradição tornaram-na uma figura
+              unificadora e amplamente respeitada no Reino Unido e no mundo.
+            </p>
 
-                <h3 class="text-light mb-3 fade-in">O Papel Contínuo da Monarquia</h3>
-                <p class="section-text text-light mb-3 fade-in">
-                    Embora a monarquia tenha perdido muitos de seus poderes políticos ao longo dos séculos, ela ainda desempenha um papel vital como símbolo de estabilidade e continuidade. A Casa de Windsor continua a ser um dos pilares da identidade nacional britânica, com eventos como o casamento real de William e Kate, e o jubileu de platina da Rainha Elizabeth II, sendo momentos de grande celebração e reflexão histórica para a população inglesa.
-                </p>
-            </div>
+            <h3 class="text-light mb-3 fade-in">
+              O Papel Contínuo da Monarquia
+            </h3>
+            <p class="section-text text-light mb-3 fade-in">
+              Embora a monarquia tenha perdido muitos de seus poderes políticos
+              ao longo dos séculos, ela ainda desempenha um papel vital como
+              símbolo de estabilidade e continuidade. A Casa de Windsor continua
+              a ser um dos pilares da identidade nacional britânica, com eventos
+              como o casamento real de William e Kate, e o jubileu de platina da
+              Rainha Elizabeth II, sendo momentos de grande celebração e
+              reflexão histórica para a população inglesa.
+            </p>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 História da Inglaterra - Todos os direitos reservados</p>
+      <p>&copy; 2025 História da Inglaterra - Todos os direitos reservados</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>

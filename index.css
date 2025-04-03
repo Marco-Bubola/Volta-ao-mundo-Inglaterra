@@ -2,24 +2,43 @@
    Font Import
 ============================= */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-  
+
 /* ============================
    Global Styles
-============================ */
+============================= */
 body {
-    font-family: 'Playfair Display', serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'montserrat', serif;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+
+}
+
+h1,
+h2,
+h5 {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+section {
+    padding: 80px 0;
 }
 
 /* ============================
    Hero Section Styles
-============================ */
+============================= */
 .hero-section {
-    background-image: url('img/england_by_paynejohnsson_dgpelwr-pre.jpg');
+    position: relative;
     background-size: cover;
     background-position: center;
     color: white;
     height: 100vh;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,15 +50,13 @@ body {
     font-size: 5rem;
     animation: fadeIn 2s ease-in-out;
     z-index: 2;
-    color: white;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
 }
 
 .hero-section p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     animation: fadeIn 3s ease-in-out;
     z-index: 2;
-    color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
@@ -54,63 +71,67 @@ body {
     box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.7);
 }
 
-/* Efeito de Fade In */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 /* ============================
    Button Styles
-============================ */
-.cta-btn {
-    background-color: transparent;
-    color: white; /* Cor do botão em branco */
-    border: 2px solid white; /* Borda branca */
-    padding: 12px 25px;
-    font-size: 18px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 20px;
-    display: inline-block;
+============================= */
+.cta-btn,
+.btn-primary,
+.btn-custom {
     transition: all 0.3s ease;
-    z-index: 2;
+    border-radius: 50px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
 }
 
-.cta-btn:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Fundo escurecido */
-    color: white; /* Cor do texto continua branca */
-    border: 2px solid white; /* Borda permanece a mesma */
+.cta-btn {
+    font-size: 2rem;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.cta-btn:hover,
+.btn-primary:hover,
+.btn-custom:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
     transform: scale(1.1);
 }
 
-/* ============================
-   Image Container Styles
-============================ */
-.image-container {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    margin: 0 auto;
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
-    overflow: hidden; /* Garante que a imagem se ajuste bem */
+.btn-primary {
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease-in-out; /* Transição suave */
+.btn-primary:hover {
+    background-color: white;
+    color: rgb(255, 255, 255);
+}
+
+.btn-custom {
+    color: #121212;
+    padding: 0.75rem 2rem;
+    border: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* ============================
    Card Styles
-============================ */
+============================= */
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .cards-container {
     position: absolute;
     bottom: 5%;
@@ -122,32 +143,24 @@ body {
 }
 
 .card {
-    width: 300px;
+    width: 400px;
     cursor: pointer;
     border: none;
     border-radius: 12px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.6); /* Fundo sutil para os cards */
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .card:hover {
-    transform: translateY(-10px); /* Levanta o card suavemente */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Sombra mais suave ao passar o mouse */
-}
-
-.card-img-top {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: opacity 0.3s ease;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .card-body {
     padding: 15px;
     color: white;
-    font-family: 'Roboto', sans-serif;
 }
 
 .card-title {
@@ -157,184 +170,12 @@ body {
 }
 
 /* ============================
-   Text Containers Styles (Inside Image)
-============================ */
-
-/* Text container 3 */
-.text-container3 {
-    position: absolute;
-    top: 0;
-    left: 73%;
-    transform: translateX(-50%);
-    height: 80vh;
-    color: white;
-    z-index: 2;
-    padding: 20px;
-    border-radius: 15px;
-    width: 50%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: right; /* Ajusta o conteúdo verticalmente */
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); /* Gradiente sutil */
-    transition: background 0.3s ease;
-}
-
-.text-container3:hover {
-    background-color: rgba(0, 0, 0, 0.7); /* Aumenta a opacidade do fundo quando hover */
-}
-
-.text-container3 h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.text-container3 p {
-    font-size: 1.5rem;
-    line-height: 1.8;
-    margin-bottom: 15px;
-}
-
-/* Text container 4 */
-.text-container4 {
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translateY(-50%) translateX(-50%);
-    color: white;
-    z-index: 2;
-    padding: 20px;
-    border-radius: 15px;
-    width: 40%;
-    text-align: center;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); /* Gradiente sutil */
-    transition: background 0.3s ease;
-}
-
-.text-container4:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.text-container4 h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.text-container4 p {
-    font-size: 1.5rem;
-    line-height: 1.8;
-    margin-bottom: 15px;
-}
-
-/* Text container 2 */
-.text-container2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    color: white;
-    z-index: 2;
-    padding: 20px;
-    border-radius: 15px;
-    width: 40%;
-    text-align: center;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); /* Gradiente sutil */
-    transition: background 0.3s ease;
-}
-
-.text-container2:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.text-container2 h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.text-container2 p {
-    font-size: 1.5rem;
-    line-height: 1.8;
-    margin-bottom: 15px;
-}
-
-/* Text container 1 */
-.text-container {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translateY(-50%) translateX(-50%);
-    color: white;
-    z-index: 2;
-    padding: 20px;
-    border-radius: 15px;
-    width: 40%;
-    text-align: center;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); /* Gradiente sutil */
-    transition: background 0.3s ease;
-}
-
-.text-container:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.text-container h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.text-container p {
-    font-size: 1.5rem;
-    line-height: 1.8;
-    margin-bottom: 15px;
-}
-
-/* ============================
-   Button Styling
-============================ */
-.btn-primary {
-    margin-top: 20px;
-    padding: 12px 30px;
-    font-size: 18px;
-    border: 2px solid white;
-    background-color: transparent;
-    color: white;
-    border-radius: 30px; /* Tornando os botões mais arredondados */
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: white;
-    color: black;
-    transform: scale(1.1); /* Leve aumento ao passar o mouse */
-}
-
-/* ============================
-   Button Styles
-============================ */
-.btn-custom {
-    color: #121212;
-    padding: 0.75rem 2rem;
-    border: none;
-    font-size: 1.4rem;
-    border-radius: 50px;
-    margin-top: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: background-color 0.3s ease;
-}
-
-
-/* ============================
    Navbar Styles
-============================ */
+============================= */
 .navbar {
     padding: 1rem 2rem;
-    background-color: transparent; /* Navbar transparente por padrão */
-    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+    background-color: transparent;
+    transition: background-color 0.3s ease;
     position: fixed;
     top: 0;
     left: 0;
@@ -343,7 +184,7 @@ body {
 }
 
 .navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.9); /* Cor de fundo quando rola a página */
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .navbar a {
@@ -356,15 +197,14 @@ body {
     background-color: #fff;
 }
 
-/* -----------------------------
-   Degradê nas palavras (hover)
------------------------------ */
-
+/* ============================
+   Gradient Text Hover Effect
+============================= */
 .gradient-text {
     color: #fff;
-    transition: all 0.4s ease;
     position: relative;
     display: inline-block;
+    transition: all 0.4s ease;
 }
 
 .gradient-text::after {
@@ -379,30 +219,22 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    -webkit-text-fill-color: transparent;
     opacity: 0;
     transition: opacity 0.4s ease;
     pointer-events: none;
 }
 
-/* Hover */
-.nav-link:hover .gradient-text::after {
-    opacity: 1;
-}
-/* Hover */
+.nav-link:hover .gradient-text::after,
 .navbar-brand:hover .gradient-text::after {
     opacity: 1;
 }
 
 /* ============================
    Scroll Animations
-============================ */
-
-   
-    /* Scroll animado */
-    .scroll {
-        animation: scroll 1.5s ease-in-out;
-    }
+============================= */
+.scroll {
+    animation: scroll 1.5s ease-in-out;
+}
 
 @keyframes scroll {
     0% {
@@ -417,18 +249,9 @@ body {
 }
 
 /* ============================
-   Responsive Adjustments
-============================ */
+   Responsive Design
+============================= */
 @media (max-width: 768px) {
-    /* Adjust Text Container */
-    .text-container, .text-container2, .text-container3, .text-container4 {
-        width: 70%;
-    }
-
-    .text-container {
-        left: 15%;
-    }
-
     .btn-primary {
         width: 100%;
         font-size: 16px;
@@ -442,5 +265,195 @@ body {
 
     .card {
         width: 100%;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* ============================
+   Image Container Styles
+============================= */
+.col-lg-7 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.col-lg-7 img,
+.col-lg-6 img {
+    width: 100%;
+    height: 650px;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.framed-img {
+    border: 10px solid #ff6347;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.framed-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+
+}
+
+/* ============================
+   Responsiveness Adjustments
+============================= */
+@media (max-width: 768px) {
+    .col-lg-7 {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .col-lg-7 img {
+        max-height: 400px;
+    }
+}
+
+.bg-dark {
+    background-color: #1a1a1a;
+    background: linear-gradient(45deg, #333333, #000000);
+}
+
+
+/* ============================
+   Section Specific Styles
+============================= */
+.about-section {
+    background-color: #121212;
+    color: #fff;
+}
+
+.about-section h2,
+.content-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: slideInLeft 1s ease-out;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.about-section p,
+.content-section p {
+    font-size: 1.7rem;
+    line-height: 1.8;
+    opacity: 0.9;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+
+.about-section .card {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+}
+
+.about-section .card-body {
+    padding: 15px;
+}
+
+.about-section .card-title {
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.about-section .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.content-section a.btn {
+    color: #ffffff;
+    padding: 10px 25px;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.content-section a.btn:hover {
+    background: linear-gradient(45deg, #cf142b, #ffffff, #00247d);
+    color: #000000;
+    border-color: #000000;
+}
+
+
+/* Footer */
+footer {
+    background-color: #121212;
+    color: #bbb;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
     }
 }
