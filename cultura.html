@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Navbar (Transparent) -->
     <nav
       class="navbar navbar-expand-lg navbar-dark fixed-top transparent-navbar"
     >
@@ -85,21 +84,17 @@
       </div>
     </nav>
     <script>
-      // Detecta o evento de rolagem
       window.onscroll = function () {
         let navbar = document.querySelector(".navbar");
 
-        // Verifica a posição de rolagem
         if (window.scrollY > 50) {
-          // Se o usuário rolou mais de 50px
-          navbar.classList.add("scrolled"); // Adiciona a classe scrolled
+          navbar.classList.add("scrolled");
         } else {
-          navbar.classList.remove("scrolled"); // Remove a classe scrolled quando voltar ao topo
+          navbar.classList.remove("scrolled");
         }
       };
     </script>
 
-    <!-- Header Section with Background Image -->
     <header
       class="text-white text-center py-5"
       style="
@@ -119,7 +114,6 @@
           background: rgba(0, 0, 0, 0.3);
         "
       ></div>
-      <!-- Gradient overlay -->
       <div
         class="container-fluid position-relative z-index-2"
         style="position: absolute; top: 20%; left: 0; right: 0; bottom: 0"
@@ -148,11 +142,9 @@
       </div>
     </header>
 
-    <!-- Section: Respeito à Família Real -->
     <section class="section bg-dark py-5" id="family-royal">
       <div class="container-fluid">
-        <div class="row align-items-center" style="height: 70vh">
-          <!-- Image on the left -->
+        <div class="row align-items-center">
           <div
             class="col-md-6 d-flex justify-content-center align-items-center"
             style="height: 100%"
@@ -174,8 +166,6 @@
               />
             </div>
           </div>
-
-          <!-- Text on the right -->
           <div class="col-md-6 mt-4 mt-md-0">
             <h2 class="section-title text-light mb-4 fade-in text-center">
               Respeito à Família Real
@@ -210,19 +200,16 @@
       </div>
     </section>
     <script>
-      // A função que será chamada quando a página for rolada
       window.addEventListener("scroll", function () {
         const navbar = document.querySelector(".navbar");
         if (window.scrollY > 50) {
-          // Quando a rolagem ultrapassar 50px
-          navbar.classList.add("scrolled"); // Adiciona a classe scrolled
+          navbar.classList.add("scrolled");
         } else {
-          navbar.classList.remove("scrolled"); // Remove a classe scrolled
+          navbar.classList.remove("scrolled");
         }
       });
     </script>
 
-    <!-- Section: Comidas Típicas -->
     <section class="section bg-dark text-white py-5" id="food">
       <div class="container-fluid">
         <h2 class="section-title text-light">Comidas Típicas da Inglaterra</h2>
@@ -233,7 +220,6 @@
           Inglaterra.
         </p>
         <div class="row">
-          <!-- Full English Breakfast Card -->
           <div class="col-md-4 py-4">
             <div class="card bg-dark text-white">
               <img
@@ -251,7 +237,6 @@
             </div>
           </div>
 
-          <!-- Fish and Chips Card -->
           <div class="col-md-4 py-4">
             <div class="card bg-dark text-white">
               <img
@@ -269,7 +254,6 @@
             </div>
           </div>
 
-          <!-- Scones Card -->
           <div class="col-md-4 py-4">
             <div class="card bg-dark text-white">
               <img
@@ -286,8 +270,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Bangers and Mash Card -->
           <div class="col-md-4 py-4">
             <div class="card bg-dark text-white">
               <img
@@ -304,8 +286,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Shepherd's Pie Card -->
           <div class="col-md-4 py-4">
             <div class="card bg-dark text-white">
               <img
@@ -322,8 +302,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Roast Beef and Yorkshire Pudding Card -->
           <div class="col-md-4 py-4">
             <div class="card bg-dark text-white">
               <img
@@ -345,10 +323,9 @@
         </div>
       </div>
     </section>
-    <!-- Section: Artes -->
     <section class="section bg-dark py-5" id="arts">
       <div class="container-fluid">
-        <div class="row align-items-center" style="height: 70vh">
+        <div class="row align-items-center">
           <div class="col-md-6 mt-4 mt-md-0">
             <h2 class="section-title text-light mb-4 fade-in text-center">
               Artes
@@ -396,11 +373,9 @@
         </div>
       </div>
     </section>
-    <!-- Section: Football -->
     <section class="section bg-dark py-5" id="football">
       <div class="container-fluid">
-        <div class="row align-items-center" style="height: 70vh">
-          <!-- Image on the left -->
+        <div class="row align-items-center">
           <div
             class="col-md-6 d-flex justify-content-center align-items-center"
             style="height: 100%"
@@ -422,8 +397,6 @@
               />
             </div>
           </div>
-
-          <!-- Text on the right -->
           <div class="col-md-6 mt-4 mt-md-0">
             <h2 class="section-title text-light mb-4 fade-in text-center">
               Football
@@ -450,10 +423,9 @@
       </div>
     </section>
 
-    <!-- Section: Pubs -->
     <section class="section bg-dark py-5" id="pubs">
       <div class="container-fluid">
-        <div class="row align-items-center" style="height: 70vh">
+        <div class="row align-items-center">
           <div class="col-md-6 mt-4 mt-md-0">
             <h2 class="section-title text-light mb-4 fade-in text-center">
               Pubs
@@ -499,12 +471,9 @@
         </div>
       </div>
     </section>
-
-    <!-- Section: População bem educada -->
     <section class="section bg-dark py-5" id="education">
       <div class="container-fluid">
-        <div class="row align-items-center" style="height: 70vh">
-          <!-- Image on the left -->
+        <div class="row align-items-center">
           <div
             class="col-md-6 d-flex justify-content-center align-items-center"
             style="height: 100%"
@@ -526,8 +495,6 @@
               />
             </div>
           </div>
-
-          <!-- Text on the right -->
           <div class="col-md-6 mt-4 mt-md-0">
             <h2 class="section-title text-light mb-4 fade-in text-center">
               População Bem Educada
@@ -552,10 +519,9 @@
         </div>
       </div>
     </section>
-    <!-- Section: Ironia e Sarcasmo -->
     <section class="section bg-dark py-5" id="irony">
       <div class="container-fluid">
-        <div class="row align-items-center" style="height: 70vh">
+        <div class="row align-items-center">
           <div class="col-md-6 mt-4 mt-md-0">
             <h2 class="section-title text-light mb-4 fade-in text-center">
               Ironia e Sarcasmo
@@ -604,7 +570,6 @@
       </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
       <p>
         &copy; 2025 Cultura e Tradições na Inglaterra - Todos os direitos

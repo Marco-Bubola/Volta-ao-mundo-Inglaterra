@@ -132,6 +132,7 @@ section {
     flex-wrap: wrap;
 }
 
+
 .cards-container {
     position: absolute;
     bottom: 5%;
@@ -284,13 +285,6 @@ section {
 /* ============================
    Image Container Styles
 ============================= */
-.col-lg-7 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
 
 .col-lg-7 img,
 .col-lg-6 img {
@@ -320,29 +314,33 @@ section {
 /* ============================
    Responsiveness Adjustments
 ============================= */
+/* ============================
+   Responsividade para Celulares
+============================= */
 @media (max-width: 768px) {
-    .col-lg-7 {
-        width: 100%;
-        padding: 0 15px;
-    }
-
     .col-lg-7 img {
+        height: auto;
+        /* Ajusta a altura da imagem automaticamente */
         max-height: 400px;
+        /* Define uma altura máxima para a imagem em telas pequenas */
+        object-fit: contain;
+        /* Faz com que a imagem seja redimensionada proporcionalmente */
     }
 }
+
 
 .bg-dark {
     background-color: #1a1a1a;
     background: linear-gradient(45deg, #333333, #000000);
 }
 
-
 /* ============================
-   Section Specific Styles
+   About Section Styles
 ============================= */
 .about-section {
     background-color: #121212;
     color: #fff;
+    padding: 0;
 }
 
 .about-section h2,
@@ -363,7 +361,6 @@ section {
     text-align: justify;
     text-indent: 30px;
 }
-
 
 .about-section .card {
     background-color: #2c2c2c;
@@ -387,6 +384,55 @@ section {
     height: 220px;
     object-fit: cover;
 }
+
+/* ============================
+     Responsiveness Adjustments for About Section
+  ============================= */
+@media (max-width: 768px) {
+    .about-section h2 {
+        font-size: 2rem;
+    }
+
+    .about-section p {
+        font-size: 1.4rem;
+        text-align: center;
+        /* Ajusta o alinhamento para melhor leitura em telas pequenas */
+        text-indent: 0;
+    }
+
+    .about-section .col-lg-5,
+    .about-section .col-lg-7 {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .about-section .card-img-top {
+        height: auto;
+        /* Permite que a imagem do card se ajuste automaticamente */
+    }
+
+    .about-section .card-body {
+        text-align: center;
+    }
+
+    .about-section .card-title {
+        font-size: 1.4rem;
+        /* Ajusta o tamanho do título nos cards */
+    }
+
+    .about-section .row {
+        display: block;
+        /* Exibe os cards em uma coluna */
+    }
+
+    .about-section .col-sm-3 {
+        width: 100%;
+        /* Cards ocupam 100% da largura em dispositivos pequenos */
+        margin-bottom: 20px;
+        /* Espaço entre os cards */
+    }
+}
+
 
 .content-section a.btn {
     color: #ffffff;

@@ -60,7 +60,6 @@ header p {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
-/* Gradient overlay for better text visibility */
 header .container-fluid {
     position: relative;
     z-index: 2;
@@ -247,7 +246,6 @@ header .container-fluid {
 
 }
 
-/* Hover - ativa o degradê com sombra */
 .nav-link:hover .gradient-text::after,
 .navbar-brand:hover .gradient-text::after {
     opacity: 1;
@@ -291,7 +289,6 @@ header .container-fluid {
     }
 }
 
-/* Animação de Scroll */
 .scroll-animation {
     opacity: 0;
     transition: opacity 1s ease-out;

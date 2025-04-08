@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Navbar (Transparent) -->
     <nav
       class="navbar navbar-expand-lg navbar-dark fixed-top transparent-navbar"
     >
@@ -85,16 +84,13 @@
       </div>
     </nav>
     <script>
-      // Detecta o evento de rolagem
       window.onscroll = function () {
         let navbar = document.querySelector(".navbar");
 
-        // Verifica a posição de rolagem
         if (window.scrollY > 50) {
-          // Se o usuário rolou mais de 50px
-          navbar.classList.add("scrolled"); // Adiciona a classe scrolled
+          navbar.classList.add("scrolled");
         } else {
-          navbar.classList.remove("scrolled"); // Remove a classe scrolled quando voltar ao topo
+          navbar.classList.remove("scrolled");
         }
       };
     </script>
@@ -103,8 +99,6 @@
         span.setAttribute("data-text", span.textContent);
       });
     </script>
-
-    <!-- Header Section with Background Image -->
     <header
       class="text-white text-center py-5"
       style="
@@ -123,7 +117,6 @@
           background: rgba(0, 0, 0, 0.3);
         "
       ></div>
-      <!-- Gradient overlay -->
       <div
         class="container-fluid position-relative z-index-2"
         style="position: absolute; top: 20%; left: 0; right: 0; bottom: 0"
@@ -154,7 +147,7 @@
 
     <section class="section bg-dark py-5" id="medieval">
       <div class="container-fluid">
-        <div class="row align-items-center" style="height: 105vh">
+        <div class="row align-items-center">
           <div
             class="col-md-6 d-flex justify-content-center align-items-center"
             style="height: 100%"
@@ -177,7 +170,6 @@
               />
             </div>
           </div>
-          <!-- Text on the right -->
           <div class="col-md-6 mt-4 mt-md-0">
             <h2 class="section-title text-light mb-4 fade-in text-center">
               A Idade Média na Inglaterra
@@ -233,10 +225,9 @@
       </div>
     </section>
 
-    <!-- Section: Idade Moderna -->
     <section class="section bg-dark py-5" id="early-modern">
       <div class="container-fluid">
-        <div class="row align-items-center" style="height: 120vh">
+        <div class="row align-items-center">
           <div class="col-md-6 mt-4 mt-md-0">
             <h2 class="section-title text-light mb-4 fade-in text-center">
               A Idade Moderna
@@ -325,8 +316,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Section: Linha do Tempo -->
     <section class="section bg-dark py-5" id="timeline">
       <div class="container-fluid">
         <h2 class="section-title text-light mb-4">
@@ -334,7 +323,6 @@
         </h2>
         <div class="timeline-container">
           <div class="row">
-            <!-- Card 1 -->
             <div class="col-md-3 mb-4">
               <div class="card bg-dark text-white">
                 <div class="card-body">
@@ -353,8 +341,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- Card 2 -->
             <div class="col-md-3 mb-4">
               <div class="card bg-dark text-white">
                 <div class="card-body">
@@ -371,8 +357,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- Card 3 -->
             <div class="col-md-3 mb-4">
               <div class="card bg-dark text-white">
                 <div class="card-body">
@@ -392,8 +376,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- Card 4 -->
             <div class="col-md-3 mb-4">
               <div class="card bg-dark text-white">
                 <div class="card-body">
@@ -416,7 +398,6 @@
           </div>
 
           <div class="row">
-            <!-- Card 5 -->
             <div class="col-md-3 mb-4">
               <div class="card bg-dark text-white">
                 <div class="card-body">
@@ -435,8 +416,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- Card 6 -->
             <div class="col-md-3 mb-4">
               <div class="card bg-dark text-white">
                 <div class="card-body">
@@ -455,8 +434,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- Card 7 -->
             <div class="col-md-3 mb-4">
               <div class="card bg-dark text-white">
                 <div class="card-body">
@@ -476,8 +453,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- Card 8 -->
             <div class="col-md-3 mb-4">
               <div class="card bg-dark text-white">
                 <div class="card-body">
@@ -501,12 +476,9 @@
         </div>
       </div>
     </section>
-
-    <!-- Section: A Monarquia Inglesa -->
     <section class="section bg-dark py-5" id="monarchy">
       <div class="container-fluid">
-        <div class="row align-items-center" style="height: 120vh">
-          <!-- Image on the left -->
+        <div class="row align-items-center">
           <div
             class="col-md-6 d-flex justify-content-center align-items-center"
             style="height: 100%"
@@ -529,8 +501,6 @@
               />
             </div>
           </div>
-
-          <!-- Text on the right -->
           <div class="col-md-6 mt-4 mt-md-0">
             <h2 class="section-title text-light mb-4 fade-in text-center">
               A Monarquia Inglesa
@@ -587,7 +557,6 @@
       </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
       <p>&copy; 2025 História da Inglaterra - Todos os direitos reservados</p>
     </footer>

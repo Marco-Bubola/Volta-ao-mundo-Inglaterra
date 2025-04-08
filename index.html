@@ -18,21 +18,11 @@
   </head>
 
   <body>
-    <!-- Navbar (Transparent) -->
     <nav
       class="navbar navbar-expand-lg navbar-dark fixed-top transparent-navbar"
     >
       <div class="container-fluid">
-        <a
-          class="navbar-brand"
-          href="#"
-          style="
-            font-size: 2.5rem;
-            font-weight: 700;
-            position: relative;
-            z-index: 3;
-          "
-        >
+        <a class="navbar-brand" href="#">
           <img
             src="img/64px-Flag_of_the_United_Kingdom_(3-5).svg.png"
             alt="bandeira inglaterra"
@@ -53,42 +43,27 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#about"
-                style="font-size: 1.4rem; padding: 10px 15px"
+              <a class="nav-link" href="#about"
                 ><span class="gradient-text">SOBRE</span></a
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="historia.html"
-                style="font-size: 1.4rem; padding: 10px 15px"
+              <a class="nav-link" href="historia.html"
                 ><span class="gradient-text">HISTÓRIA</span></a
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="cultura.html"
-                style="font-size: 1.4rem; padding: 10px 15px"
+              <a class="nav-link" href="cultura.html"
                 ><span class="gradient-text">CULTURA</span></a
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="turismo.html"
-                style="font-size: 1.4rem; padding: 10px 15px"
+              <a class="nav-link" href="turismo.html"
                 ><span class="gradient-text">TURISMO</span></a
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="curiosidades.html"
-                style="font-size: 1.4rem; padding: 10px 15px"
+              <a class="nav-link" href="curiosidades.html"
                 ><span class="gradient-text">CURIOSIDADES</span></a
               >
             </li>
@@ -96,51 +71,31 @@
         </div>
       </div>
     </nav>
+
     <script>
-      // Detecta o evento de rolagem
       window.onscroll = function () {
         let navbar = document.querySelector(".navbar");
 
-        // Verifica a posição de rolagem
         if (window.scrollY > 50) {
-          // Se o usuário rolou mais de 50px
-          navbar.classList.add("scrolled"); // Adiciona a classe scrolled
+          navbar.classList.add("scrolled");
         } else {
-          navbar.classList.remove("scrolled"); // Remove a classe scrolled quando voltar ao topo
+          navbar.classList.remove("scrolled");
         }
       };
 
-      // Adiciona o atributo data-text aos spans
       document.querySelectorAll(".gradient-text").forEach((span) => {
         span.setAttribute("data-text", span.textContent);
       });
     </script>
-    <!-- Hero Section -->
     <div
       class="hero-section"
       style="
-        background: url('img/england_by_paynejohnsson_dgpelwr-pre.jpg')
-          no-repeat center center;
-        background-size: cover;
+        background-image: url('img/england_by_paynejohnsson_dgpelwr-pre.jpg');
       "
     >
-      <div
-        style="
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: rgba(0, 0, 0, 0.5);
-          z-index: 1;
-        "
-      ></div>
-      <!-- Gradient overlay -->
+      <div class="overlay"></div>
 
-      <div
-        class="container-fluid text-center"
-        style="position: relative; z-index: 2"
-      >
+      <div class="container-fluid text-center hero-content">
         <h1 class="display-4 text-white">Bem-vindo à Inglaterra</h1>
         <p class="lead text-white">
           Explore a terra da cultura rica, história fascinante e paisagens
@@ -149,11 +104,9 @@
         <a href="#about" class="cta-btn btn btn-outline-light">Descubra Mais</a>
       </div>
     </div>
-
-    <!-- About Section -->
     <section id="about" class="about-section" style="margin: 0; padding: 0">
       <div class="container-fluid bg-dark">
-        <div class="row no-gutters" style="height: 85vh">
+        <div class="row teste no-gutters">
           <div class="col-lg-5 p-5">
             <h2>Sobre a Inglaterra</h2>
             <p>
@@ -175,29 +128,25 @@
             <img
               src="img/Design sem nome (3).png"
               alt="Londres"
-              style="width: 99%"
               class="img-fluid rounded"
             />
           </div>
         </div>
       </div>
-      <div class="container-flud bg-dark">
+      <div class="container-fluid bg-dark">
         <div class="row no-gutters">
-          <div class="col-lg-12 p-5">
+          <div class="col-lg-12 p-5 text-center">
             <h2>Bem-vindo à Navegação Cultural da Inglaterra</h2>
-            <p style="text-align: center">
+            <p>
               Explore as seções abaixo para conhecer mais sobre a rica história,
               cultura, turismo e culinária da Inglaterra.
             </p>
-            <p style="text-align: center">
+            <p>
               Clique nos cartões para navegar diretamente para o conteúdo que
               mais te interessa. Vamos embarcar nessa jornada juntos!
             </p>
           </div>
-
-          <!-- Cards para navegar para as seções -->
           <div class="row d-flex justify-content-center">
-            <!-- Card de História -->
             <div class="col-sm-3 mb-3">
               <div
                 class="card bg-dark"
@@ -213,8 +162,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- Card de Cultura -->
             <div class="col-sm-3 mb-3">
               <div
                 class="card bg-dark"
@@ -230,8 +177,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- Card de Turismo -->
             <div class="col-sm-3 mb-3">
               <div
                 class="card bg-dark"
@@ -247,7 +192,6 @@
                 </div>
               </div>
             </div>
-            <!-- Card de Curiosidades -->
             <div class="col-sm-3 mb-3">
               <div
                 class="card bg-dark"
@@ -267,26 +211,24 @@
         </div>
       </div>
     </section>
+
     <script>
       function scrollToSection(sectionId) {
         const section = document.getElementById(sectionId);
         if (section) {
-          // Altura da navbar
           const navbarHeight = document.querySelector(".navbar").offsetHeight;
 
-          // Rolagem suave, considerando a altura da navbar
           window.scrollTo({
-            top: section.offsetTop - navbarHeight, // Ajusta a posição de rolagem
-            behavior: "smooth", // Rolagem suave
+            top: section.offsetTop - navbarHeight,
+            behavior: "smooth",
           });
         }
       }
     </script>
 
-    <!-- História Section -->
     <section id="history-section" class="content-section py-5 bg-dark">
       <div class="container-fluid bg-dark p-0">
-        <div class="row no-gutters" style="height: 70vh">
+        <div class="row no-gutters">
           <div class="col-lg-6">
             <img
               src="img/Battle-of-Philiphaugh.jpg"
@@ -314,11 +256,9 @@
         </div>
       </div>
     </section>
-
-    <!-- Turismo Section -->
     <section id="tourism-section" class="content-section py-5 bg-dark">
       <div class="container-fluid bg-dark p-0">
-        <div class="row no-gutters" style="height: 70vh">
+        <div class="row no-gutters">
           <div
             class="col-lg-6 p-5 d-flex flex-column justify-content-center align-items-center"
           >
@@ -347,7 +287,7 @@
     </section>
     <section id="culture-section" class="content-section py-5">
       <div class="container-fluid p-0">
-        <div class="row no-gutters" style="height: 70vh">
+        <div class="row no-gutters">
           <div class="col-lg-6">
             <img
               src="img/Francis_Dodd_-_Dodd-98279_-_Whitehall_and_the_Palace_of_Westminster.jpg"
@@ -384,10 +324,9 @@
         </div>
       </div>
     </section>
-    <!-- Curiosidades Section -->
     <section id="curiosities-section" class="content-section py-5 bg-dark">
       <div class="container-fluid bg-dark p-0">
-        <div class="row no-gutters" style="height: 70vh">
+        <div class="row no-gutters">
           <div
             class="col-lg-6 p-5 d-flex flex-column justify-content-center align-items-center"
           >
@@ -415,31 +354,27 @@
       </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
       <p>&copy; 2025 Inglaterra - Todos os direitos reservados</p>
     </footer>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // Ajuste de rolagem suave para links com o href="#about"
         document.querySelectorAll('a[href="#about"]').forEach((anchor) => {
           anchor.addEventListener("click", function (e) {
-            e.preventDefault(); // Impede o comportamento padrão de rolagem
+            e.preventDefault();
 
-            const target = document.querySelector("#about"); // Seção destino
-            const navbarHeight = document.querySelector(".navbar").offsetHeight; // Altura da navbar
+            const target = document.querySelector("#about");
+            const navbarHeight = document.querySelector(".navbar").offsetHeight;
 
-            // Rolagem suave para a seção #about, considerando a altura da navbar
             window.scrollTo({
-              top: target.offsetTop - navbarHeight, // Ajuste a posição da rolagem
-              behavior: "smooth", // Rolagem suave
+              top: target.offsetTop - navbarHeight,
+              behavior: "smooth",
             });
           });
         });
       });
     </script>
-    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
