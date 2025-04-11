@@ -1,6 +1,6 @@
 # Volta ao Mundo - Inglaterra
 
-### Atividade para aula do professor Junior*
+### Atividade para aula do professor Junior
 
 - **Tema:** Inglaterra
 - **Faculdade:** Fatec Ogari de Castro Pacheco (Itapira)
