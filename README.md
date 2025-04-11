@@ -13,6 +13,12 @@
 
 Este projeto é uma página web interativa que explora a cultura, história, turismo e curiosidades da Inglaterra. Ele foi desenvolvido como parte de uma atividade acadêmica para demonstrar habilidades em HTML, CSS e JavaScript.
 
+
+## Acesse o Projeto Online
+
+Você pode acessar o projeto diretamente pelo GitHub Pages:  
+[https://marco-bubola.github.io/Volta-ao-mundo-Inglaterra/](https://marco-bubola.github.io/Volta-ao-mundo-Inglaterra/)
+
 ## Objetivo
 
 O objetivo do projeto é apresentar informações relevantes sobre a Inglaterra de forma visualmente atraente e organizada, utilizando boas práticas de desenvolvimento web.
